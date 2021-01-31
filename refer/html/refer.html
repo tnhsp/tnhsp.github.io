@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>报名系统 - 泰牛程序员</title>
+
+	<!-- Bootstrap -->
+	<link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- <link href="static/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+	-->
+	<link href="static/css/common.css" rel="stylesheet">
+	<link href="static/css/refer.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="static/js/html5shiv.min.js"></script>
+	<script src="static/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	<div id="header" class="navbar navbar-defalut navbar-fixed-top header">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-menu" aria-expanded="false">
+					<span class="sr-only">折叠导航</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand brand-logo" href="http://www.itbull.cn/">泰牛程序员</a>
+			</div>
+
+			<p class="navbar-text subtitle">报名系统</p>
+
+			<div class="collapse navbar-collapse" id="navbar-collapse-menu">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active">
+						<a href="#">我要报名</a>
+					</li>
+					<li>
+						<a href="http://www.itbull.cn/">PHP移动互联网</a>
+					</li>
+					<li>
+						<a href="http://www.itbull.cn/h5/index.html">Web前端与移动互联网</a>
+					</li>
+					<li>
+						<a href="http://www.imeixue.cn/">每学网</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-8 main">
+				<form>
+					<div class="form-group has-feedback">
+						<label for="userName">姓名</label>
+						<input type="email" name="user_name" class="form-control" id="userName" placeholder="真实姓名" aria-describedby="userNameHelp">
+						<span class="glyphicon glyphicon-star-empty form-control-feedback" aria-hidden="true"></span>
+						<span id="userNameHelp" class="help-block">学生姓名，作为登陆用户名</span>
+					</div>
+
+					<div class="form-group has-feedback">
+						<label for="phoneNumber">电话号码</label>
+						<input type="tel" name="phone_number" class="form-control" id="phoneNumber" placeholder="常用电话号码" aria-describedby="phoneNumberHelp">
+						<span class="glyphicon glyphicon-star-empty form-control-feedback" aria-hidden="true"></span>
+						<span id="phoneNumberHelp" class="help-block">咨询师会联系该号码，同时作为你的登陆密码</span>
+					</div>
+
+					<div class="form-group has-feedback">
+						<label for="qq">QQ</label>
+						<input type="text" name="qq" class="form-control" id="qq" placeholder="常用QQ号码" aria-describedby="qqHelp">
+						<span class="glyphicon glyphicon-star-empty form-control-feedback" aria-hidden="true"></span>
+						<span id="qqHelp" class="help-block">咨询师会联系该QQ号码</span>
+					</div>
+
+					<div class="form-group has-feedback">
+						<label for="email">email</label>
+						<input type="text" name="email" class="form-control" id="email" placeholder="常用电子邮箱" aria-describedby="emailHelp">
+						<span class="glyphicon glyphicon-star-empty form-control-feedback" aria-hidden="true"></span>
+						<span id="emailHelp" class="help-block">老师会向该邮箱发送学习资料</span>
+					</div>
+
+					<div class="form-group">
+						<label for="course">意向课程</label>
+						<select class="form-control" name="course" id="course" aria-describedby="courseHelp">
+							<option value="1">PHP</option>
+							<option value="2">前端</option>
+						</select>
+						<span id="courseHelp" class="help-block"></span>
+					</div>
+
+					<div class="form-group">
+						<label for="education">拥有学历</label>
+						<select class="form-control" name="education" id="education" aria-describedby="educationHelp">
+							<option value="1">本科</option>
+							<option value="2">大专</option>
+							<option value="3">高中/中专</option>
+							<option value="4">研究生及以上</option>
+							<option value="5">初中及以下</option>
+						</select>
+						<span id="educationHelp" class="help-block"></span>
+					</div>
+
+					<div class="form-group">
+						<label for="gender">性别</label>
+						<br>
+						<label class="radio-inline">
+							<input type="radio" name="gender" id="gender-1" value="1" checked="checked">男</label>
+						<label class="radio-inline">
+							<input type="radio" name="gender" id="gender-2" value="2">女</label>
+						<label class="radio-inline">
+							<input type="radio" name="gender" id="gender-3" value="3">保密</label>
+						<span id="genderHelp" class="help-block"></span>
+					</div>
+
+					<div class="form-group">
+						<label for="referer">了解渠道</label>
+						<br>
+						<label class="checkbox-inline">
+							<input type="checkbox" name="referer[]" id="referer-1" value="1" checked="checked">网络搜索</label>
+						<label class="checkbox-inline">
+							<input type="checkbox" name="referer[]" id="referer-2" value="2">朋友推荐</label>
+						<label class="checkbox-inline">
+							<input type="checkbox" name="referer[]" id="referer-3" value="3">其他</label>
+						<span id="refererHelp" class="help-block"></span>
+					</div>
+
+					<div class="form-group">
+						<label for="introduction">自我介绍</label>
+						<textarea name="introduction" id="introduction"  rows="4" class="form-control" aria-describedby="educationHelp"></textarea>
+						<span id="introductionHelp" class="help-block">简要介绍下自己吧</span>
+					</div>
+
+					<button type="submit" class="btn btn-primary">报名</button>
+				</form>
+			</div>
+			<!-- end of main -->
+
+			<!-- <div class="col-md-1"></div> -->
+
+			<div class="col-md-4 procession">
+				<div class="row">
+					<div class="col-sm-12 pro-title">在线报名流程</div>
+				</div>
+				<div class="row level-1">
+
+					<div class="col-sm-7 level-2">
+						<ul>
+							<li class="bg-primary">提交报名信息</li>
+							<li class="bg-info">等待咨询联系</li>
+						</ul>
+					</div>
+					<div class="col-sm-5 pro-subtitle bg-success">在线报名</div>
+				</div>
+				<div class="row level-1">
+					<div class="col-sm-7 level-2">
+						<ul>
+							<li class="bg-info" class="">获取测试题</li>
+							<li class="bg-info">完成测试题</li>
+							<li class="bg-info">测试题评分</li>
+							<li class="bg-info">反馈成绩</li>
+						</ul>
+					</div>
+					<div class="col-sm-5 pro-subtitle bg-success">基础测试</div>
+				</div>
+				<div class="row level-1">
+					<div class="col-sm-7 level-2">
+						<ul>
+							<li class="bg-info">预约面试形式</li>
+							<li class="bg-info">面试</li>
+						</ul>
+					</div>
+					<div class="col-sm-5 pro-subtitle bg-success">面试</div>
+				</div>
+				<div class="row level-1">
+					<div class="col-sm-7 level-2">
+						<ul>
+							<li class="bg-info">获得预习资料</li>
+							<li class="bg-info">准备入学</li>
+						</ul>
+					</div>
+					<div class="col-sm-5 pro-subtitle bg-success">完成入学</div>
+				</div>
+			</div>
+			<!-- end of procession -->
+		</div>
+	</div>
+
+	<div class="container-fluid footer">
+			<div class="center-block container">
+				泰牛程序员PHP学院-培养中国抢手的PHP程序员<br>
+				版权所有：&#12288;2016北京每学教育科技有限公司<br>
+				座&#12288;&#12288;机：&#12288;010-57180327<br>
+				电&#12288;&#12288;话：&#12288;186-1034-4780<br>
+				邮&#12288;&#12288;箱：&#12288;3274261751@qq.com<br>
+				地&#12288;&#12288;址：&#12288;北京市海淀区信息路甲28号C座（二层）02B室<br>
+				ICP 备案：&#12288;京ICP备15048336号<br>
+			</div>
+	</div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="static/js/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="static/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

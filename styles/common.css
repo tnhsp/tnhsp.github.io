@@ -1,0 +1,20 @@
+/*body设置*/
+body {font-size: 14px; }
+a {text-decoration: none;}
+
+.wrapper {width: 1140px; margin: 0px auto; clear: both;position: relative;}
+/*头部样式*/
+.header {height: 70px; width: 100%; background: #141414; }
+.header h1{position: absolute; left: 0; top: 15px; color: #fff; font-size: 32px; font-weight: bold; font-family: "黑体"; }
+.header h1 a {color: #fff;}
+.header ul {margin-left: 400px; height: 70px; line-height: 70px;}
+.header ul li{float: left; margin: 0 15px;}
+
+.header li a {color: #9d9d9d; font-size: 16px;}
+.header li a:hover {color: #fff; }
+
+/*底部*/
+.footer {height: 150px; width: 100%; background: #141414; position: relative; color: #fff; padding-top:25px;}
+.footer p{line-height: 20px;}
+
+

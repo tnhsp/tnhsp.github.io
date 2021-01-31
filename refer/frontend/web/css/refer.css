@@ -1,0 +1,54 @@
+body {
+	margin-top: 70px;
+	background: url('../img/bg.jpg') fixed;
+	background-size: cover;
+}
+.header {
+	background: #111;
+	opacity: 0.8;
+	color: #ccc;
+}
+.footer {
+	background: #111;
+	/*opacity: 0.8;*/
+	color: #ccc;
+	margin-top: 30px;
+	padding-top:30px;
+	/*height: 70px;*/
+	/*line-height: 70px;*/
+
+}
+.footer
+.brand-logo {
+	font-size: x-large;
+}
+.subtitle {
+	/*font-size: x-large;*/
+}
+.procession {
+	opacity: 0.9;
+	/*position: fixed;*/
+	/*right: 100px;*/
+}
+.procession .pro-title {
+	font-size: 24px;
+	font-weight: bold;
+	color: #58a6fb;
+	margin: 30px;
+}
+.procession .level-1 {
+	margin-bottom: 20px;
+}
+.procession .level-1 .pro-subtitle {
+	font-size: 24px;
+	/*color: ;*/
+}
+.procession .level-2 li {
+	padding-left: 24px;
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+.main {
+	padding-top: 30px;
+}

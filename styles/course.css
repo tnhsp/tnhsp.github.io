@@ -1,0 +1,15 @@
+/*课程内容安排页面*/
+.course {font-family: "微软雅黑";}
+
+.course h2{ font-size: 50px; font-weight: bold;margin: 40px auto; text-align: center;}
+
+.brief .pic {width: 160px; float: left; display: inline;}
+.brief .intro {width: 980px; float: left;}
+.brief h3 {font-size: 24px; font-weight: bold; position:  relative; top:-7px;}
+
+.intro p {font-family: "宋体"; font-size: 16px; line-height: 25px; color: #333;}
+.intro p.link {text-align: right;}
+
+.intro p.link a{font-family: "微软雅黑";color: #0070C0; font-size: 20px; font-weight: bold;}
+
+.course hr{border-bottom: 1px solid #0070C0; margin: 30px 0; border-top: 0;}

@@ -1,0 +1,14 @@
+html, body, div, p, ul, li, ol, dl, dt, dd, header, footer, video, h1, h2, h3, h4, canvas, section, figure {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    font-family: "微软雅黑",Arial;
+    /*height: 100%;*/
+}
+a {
+    text-decoration: none;
+}
+ul li {
+    list-style: outside none none;
+}

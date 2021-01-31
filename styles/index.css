@@ -1,0 +1,15 @@
+body {background:#E4393C;}
+
+h1{ text-align:center; font-size:36px; font-weight:bold; color:#fff; margin: 50px auto; font-family:"微软雅黑";}
+h1 strong {font-size:64px; line-height:60px; position:relative; top:10px;}
+
+
+h2 {text-align:center; margin: 80px auto; font-weight:bold; color:#fff; font-size:80px; font-family:"黑体"}
+h2 strong {position:relative; bottom:25px; }
+
+.nav {width:1140px; margin:50px auto; text-align:center;}
+
+.nav li {display:inline; zoom:1;}
+.nav li  a{ font-size: 40px; font-weight:bold;  color:#fff;  font-family:"微软雅黑"; text-decoration:none; display:inline-block;  background:#9BBB59;  padding:20px 25px; border-radius:10px; margin:0 30px; }
+
+.nav li  a:hover {background:#76AD0D;}
