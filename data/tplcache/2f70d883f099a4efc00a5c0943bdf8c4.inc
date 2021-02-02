@@ -1,0 +1,1 @@
+<a href="[field:typelink/]">我要报名</a>

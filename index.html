@@ -1,1017 +1,650 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
+<html>
+    <head>
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="/skin/js/html5.js"></script>
+        <![endif]-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <title>韩顺平教育</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <script type="text/javascript" src="/skin/js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/skin/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="/skin/css/global.css">
+    <link rel="stylesheet" type="text/css" href="/skin/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/skin/css/owl.carousel.min.css">
+    <script type="text/javascript" src="/skin/js/owl.carousel.js"></script>
+    <script type="text/javascript" src="/skin/js/main.js"></script>
+    <script>
+        $(function () {
+            $(".team_owl .owl").owlCarousel({
+                 responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2,center:false
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }, margin: 20, loop: true, center: true, dots: false, nav: true, navText: ["<img src='/skin/images/cur1.png' />", "<img src='/skin/images/cur2.png' />"]
+            });
+            $(".news_list .owl").owlCarousel({ 
+                responsive: {
+                    0: {
+                        items: 1,loop:true
+                    },
+                    600: {
+                        items: 2, center: false
+                    },
+                    1000: {
+                        items: 3
+                    }
+                },
+                margin: 20, dots: false, nav: true, navText: ["<img src='/skin/images/cur3.png' />", "<img src='/skin/images/cur4.png' />"] });
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+            $(".list_box .item").hide().eq(0).show();
+            $(".course_tit ul li").click(function () {
+                $(this).addClass("on").siblings().removeClass("on");
+                $(".list_box .item").hide().eq($(this).index()).show();
+            })
 
-<head>
+        })
+    </script>
+    </head>
+    <body>
+<!-------------------------------------- 头部开始 --------------------------------------> 
+<div class="header">
+  <div class="head">
+    <div class="wrap"> <span>韩顺平教育，欢迎您</span>
+      <div class="frt">
+        <ul>
+          <li> <span>微信咨询</span>
+            <div class="ewm"><img src="/skin/images/ewm.png"/></div>
+          </li>
 
-	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+          <li><span>微信公众号</span>
+            <div class="ewm"><img src="/skin/images/ewm2.png"/></div>
+          </li>
 
-	<title>PHP培训_泰牛程序员_韩顺平</title>
-
-	<meta name="keywords" content="PHP培训,PHP学习,PHP课程,PHP开发,PHP视频,泰牛程序员" />
-
-	<meta name="description" content="实力it培训-泰牛程序员.韩顺平老师亲自授课,课程有PHP培训,PHP开发,0学费入学" />
-
-	<link rel="stylesheet" href="styles/base.css" />
-
-	<link rel="stylesheet" href="styles/common.css" />
-
-	<link rel="stylesheet" href="styles/kf.css" />
-
-	<link rel="stylesheet" href="styles/php.css" />
-
-	<link rel="stylesheet" href="styles/bpop.css" />
-
-	<link rel="stylesheet" href="styles/popup.css" />
-
-	<script type="text/javascript" src='js/jquery-1.4.2.min.js'></script>
-
-	<script type="text/javascript" src='js/kefu.js'></script>
-
-</head>
-
-<body>
-
-	<!-- 头部start -->
-
-	<div class="header">
-
-		<div class="wrapper">
-
-			<h1><a href="./index.html">韩顺平教育</a></h1>
-
-			<ul>
-
-				<li><a href="http://www.itbull.cn/h5/index.html">Web前端与H5移动学院</a></li>
-
-				<li><a href="course.html">PHP培训课程</a></li>
-
-				<!--
-
-				<li><a href="">前端和移动开发学院</a></li>
-
-				<li><a href="">PHP培训课程</a></li>
-
-				<li><a href="">PHP视频下载</a></li>
-
-				-->
-
-				<li><a target='_blank' href="http://www.imeixue.cn">旗下每学网</a></li>
-
-				<li><a target='_blank' href="http://tieba.baidu.com/f?kw=%CC%A9%C5%A3%B3%CC%D0%F2%D4%B1%B9%D9%B7%BD&fr=home">官方贴吧</a></li>
-
-				<li><a target='_blank' href="http://www.imeixue.cn/Article-Index-article-id-90.html">来校路线</a></li>
-
-				<li><a target="_blank" href="./job.html">加入泰牛</a></li>
-
-			</ul>
-
-		</div>
-
-		<div style="clear:both;"></div>
-
-	</div>
-
-	<!-- 头部end-->
-
-
-
-    <!-- 头部banner部分 start-->
-
-    <div class="php-banner">
-
-    	<div class="wrapper">
-
-    		<h2>狂奔吧！<span>中国未来的程序员!</span></h2>
-
-    	</div>
-
+          <!--
+          <li><span><a href="/a/zaixianbaoming/">在线报名</a></span></li>
+          -->
+        </ul>
+      </div>
+      <div class="clear"></div>
     </div>
-
-    <!-- 头部banner部分 end-->
-
-	
-
-
-
-	<!-- 主体内容 start -->
-
-	<div class="wrapper main">
-
-		<!-- 图片广告 start -->
-
-	    <div class="ad mt10">
-
-	    	<img src="images/s1.jpg" alt="" />
-
-	    </div>
-
-	    <!-- 图片广告 end -->
-
-		
-
-		<!-- 师资 start -->
-
-		<div class="teacher mt20">
-
-			<h2>认识一下你们的任课老师</h2>
-
-			<div class="teacher-hd">
-
-				<h3><strong>韩顺平</strong>(亲自带课)</h3>
-
-				<p><a style='color:#FFF; font-size:26px' target='_blank' href="http://baike.baidu.com/link?url=eSvjMB4r9hcTZxpgrzeH7MRRTaMXt-PY4Tp11KeHIu2Ckkp9qD3kfva8S0HeS2RHJEvGebSqAsdvBL-r5ufFQzRMSjhun3Z2VajVF-_OoR3" >点击了解韩顺平百度百科</a></p>
-
-				<p><a style='color:#FFF; font-size:26px' target='_blank' href='http://hanshunping.blog.51cto.com/7532264/1717023' >我为什么辞去百万年薪，自己创业？</a></p>
-
-			</div>
-
-			<div class="teacher-bd">
-
-				<!-- 头像 start -->
-
-				<div class="pic fl"><img src="images/hsp.gif" alt="" /></div>
-
-				<!-- 头像 end -->
-
-
-
-				<!-- 文字部分 start -->
-
-				<div class="intro fl ml50">
-
-					<h4>韩顺平</h4>
-
-					<p>毕业于清华大学，拥有九年大型项目开发和管理经验，曾任新浪网软件项目经理，使用PHP与JavaEE技术开发新浪网系统，北京点击科技公司高级软件工程师，用友软件股份有限公司U8事业部软件工程师，具有丰富的互联网开发经验。主持或参与《新浪邮件系统》、《橙红sns(社会化网络)网站》、《点击科技协同软件群组服务器端(Linux/solaris平台)》、《总参语音监控系统》、《英语学习机系统》、《用友erp(u8产品)系统》等项目。实战经验丰富，授课耐心细致，通俗易懂，勇于实践，勤于创新，授课风格贴近生活，授课语言生动风趣，多年来培训的学员已成功在用友、搜狐、淘宝、中软 等知名企业就职。</p>
-
-					<br />
-
-					<p>视频教程深受欢迎，在百度收录量逼近千万级。</p>
-
-					<p>被百度评为“<font style='color:#ff0000'>人类灵魂工程师</font>”代表作品《php从入门到精通》《循序渐进学java》 </p>
-
-					<p>百度指数日均破1000。 </p>
-
-					<br />
-
-					<h4>韩老师个人动态:</h4>
-
-					<p><a href="">腾讯微博</a>  韩老师最新动态将 发布到这里   　<em>老韩微信</em> <img src="images/wx.png" alt="" class="wx" /></p>
-
-				</div>
-
-				<!-- 文字部分 end -->
-
-
-
-				<div style="clear:both;"></div>
-
-			</div>
-
-			<!--师资开始-->
-
-			<!--
-
-			<div class="teacher-bd">
-
-				<div class="intro fl">
-
-					<h4>王超平</h4>
-
-					<p>毕业于清华大学，拥有九年大型项目开发和管理经验，曾任新浪网软件项目经理，使用PHP与JavaEE技术开发新浪网系统，北京点击科技公司高级软 件工程师，用友软件股份有限公司U8事业部软件工程师，具有丰富的互联网开发经验。主持或参与《新浪邮件系统》、《橙红sns(社会化网络)网站》、《点击科技协同软件群组服务器端(Linux/solaris平台)》、《总参语音监控系统》、《英语学习机系统》、《用友erp(u8产品)系统》等项 目。实战经验丰富，授课耐心细致，通俗易懂，勇于实践，勤于创新，授课风格贴近生活，授课语言生动风趣，多年来培训的学员已成功在用友、搜狐、淘宝、中软 等知名企业就职。</p>
-
-					<br />
-
-					<p>视频教程深受欢迎。</p>
-
-					<p>被百度评为“人类灵魂工程师”代表作品《php从入门到精通》《循序渐进学java》 </p>
-
-					<br />				
-
-				</div>		
-
-				<div class="pic fr"><img src="images/hsp.png" alt="" /></div>
-
-				<div style="clear:both;"></div>
-
-			</div>-->
-
-		</div>
-
-		<!-- 师资 end -->
-
-		<br />
-
-		<!--薪资 start -->
-
-		<div class="salary">
-
-			<h2>PHP攻城狮行情</h2>
-
-			<img src="images/s2.jpg" alt="" />
-
-			<dl>
-
-				<dd><span>初级PHP攻城狮：</span>月薪<em>5k+</em>元</dd>
-
-				<dd><span>中级PHP攻城狮：</span>月薪<em>6K+~8k+</em>元</dd>
-
-				<dd><span>高级PHP攻城狮：</span>月薪<em>9K+~20k+</em>元</dd>
-
-				<dd class ='high'>架构师年薪可达<strong>60+</strong>万</dd>
-
-			</dl>
-
-
-
-			<div class="enroll">
-
-				<a target="_blank" href="http://www.itbull.cn/flow.html">
-
-					泰牛程序员-PHP大牛班 ，原价14800元，优惠价8980!
-
-					<strong>我要咨询报名</strong>
-
-
-
-				</a>
-
-			</div>
-
-			<div style="clear:both;"></div>
-
-		</div>
-
-		<!--薪资 end -->
-
-
-
-		<br />
-
-		<br />
-
-		<!-- 忍 start -->
-
-		<div class="ren">
-
-			<h2>真心想好好当个PHPer，但现实确有N多不忍?</h2>
-
-			<div class="ren-bd">
-
-				<ul>
-
-					<li><img src="images/ren1.jpg" alt="" /></li>
-
-					<li><img src="images/ren2.jpg" alt="" /></li>
-
-					<li><img src="images/ren3.jpg" alt="" /></li>
-
-				</ul>
-
-			</div>
-
-			<div style="clear:both;"></div>
-
-			<div class="enroll">
-
-				<a target="_blank" href="http://www.itbull.cn/flow.html">
-
-					泰牛程序员-PHP大牛班 ，原价14800元，优惠价8980!
-
-					<strong>我要咨询报名</strong>
-
-
-
-				</a>
-
-			</div>
-
-			<div style="clear:both;"></div>
-
-		</div>
-
-		<!-- 忍 end -->
-
-		<!--<br />
-
-		<br />-->
-
-		<br/>
-
-		<!-- 开班 start -->
-
-		<div class="opening">
-
-			<h2><a href="" name="yhzc"></a>泰牛程序员开课了,震撼推出</h2>
-
-			<h3>PHP大牛就业班-培养中国抢手的PHP程序员!</h3>
-
-			<h4>开班信息</h4>
-
-			<div class="info">
-
-				<p>第1期 PHP基础班 2016/02/28 (免费，不要钱，限前40名。<font style='color:#ffff00'>已经开班</font>)</p>
-
-				<p>第1期 PHP大牛班 2016/03/29 (免费赠送02/28基础班 <font style='color:#ffff00'>已经开班</font>)</p>
-
-				<p>第2期 PHP基础班 2016/04/20 (免费，不要钱，限前40名。<font style='color:#ffff00'>已经开班</font>)</p>
-
-				<p>第2期 PHP大牛班 2016/05/20 (免费赠送04/20基础班 <font style='color:#ffff00'>已满，待开班</font>)</p>
-				<p>第3期 PHP基础班 2016/06/18 (报大牛班免费赠送基础班。<font style='color:#ffff00'>已满，待开班</font>)</p>
-				<p>第3期 PHP大牛班 2016/07/18 (免费赠送06/18基础班 <font style='color:#ffff00'>已满，待开班</font>)</p>
-
-			</div>
-
-			<h4>优惠大放送</h4>
-
-			<div class="favour">
-
-				<p>  报名并缴清大牛班学费，均可以享受以下优惠：</p>
-
-				<dl>
-
-					<dt>原价<strong>14800</strong>元的大牛班，优惠价：<strong>8980</strong>元，优惠条件是在满足以下方式之一：</dt>
-
-					<dd>1. 自带电脑；</dd>
-
-					<dd>2. 录制一份泰牛程序员相关的视频（需要露脸，视频内容包括：个人简介，为何选择到泰牛程序员学习，个人计划，期望，目标，对泰牛程序员的印象等等）；</dd>
-
-					<dd>3. 3人组团报名；</dd>
-
-				</dl>
-
-				<dl>
-
-					<dt><font style='color:#ffff00;font-weight:bold;'>注意：</font></dt>
-
-					<dd>1. 就算同时满足了以上的2个或者3个条件，还是享受8980元优惠，并无更低的优惠；</dd>
-
-					<dd>2. 如果需要租用学校电脑学习，租金为200元/月；</dd>
-
-				</dl>
-
-			</div>
-
-			<div class="enroll">
-
-				<a target="_blank" href="http://www.itbull.cn/flow.html">
-
-					泰牛程序员-PHP大牛班 ，原价14800元，优惠价8980!
-
-					<strong>我要咨询报名</strong>
-
-
-
-				</a>
-
-			</div>
-
-		</div>
-
-		<!-- 开班 end -->
-
-		<br />
-
-
-
-		<!-- 学习线路 start -->
-
-		<div class="line">
-
-			<h2>2016年PHP课程架构，仅看课程，企业必须开出8k-10k+的月薪! 来泰牛程序员，做中国抢手的程序员</h2>
-
-			<font style='font-size:30px;font-weight:bold;font-family: "微软雅黑";color:#ff0000'>紧急通知：</font><font style='font-size:20px;font-family: "微软雅黑";'>韩顺平团队打造的2016PHP大牛班培训课程体系升级完毕。</font><br/><br/>
-
-
-
-<font style='font-size:20px;font-family: "微软雅黑";'>广大PHP学员们，您们好，早在2011年由韩顺平老师打造的PHP培训课程体系已经成为业内培训标杆。国内多半的PHP初学者都是看韩老师的PHP视频课程入门的。历经5年，韩老师深感以前的课程体系有些老化，跟不上时代的发展，不能更好的满足用人单位的需要。</font>
-
-<br/><br/><font style='font-size:20px;font-family: "微软雅黑";'>
-
-2016年的春天，韩顺平团队将重磅推出新一代PHP培训课程体系，很多课程都是国内领先，这些牛哄哄的课程将植入到泰牛程序员-PHP大牛班中, 韩顺平老师团队将带领PHP大牛班的学员，挑战月薪15000，冲击年薪20万。</font></p>
-
- <br />
-
-	<p style='text-align:center;font-size:40px;font-weight:bold;font-family: "微软雅黑";line-height:90px;'>泰牛程序员 VS 其它机构</p>
-
-		<img style='text-align:center' src='./images/pk.gif'/><br /><br />
-
-		<img style='text-align:center' src='./images/basic.gif'/><br /><br />
-
-		<img style='text-align:center' src='./images/dn1.gif'/>
-
-		<img style='text-align:center' src='./images/dn2.gif'/>
-
-		<p style='text-align:center;font-size:30px;font-weight:bold;font-family: "微软雅黑";line-height:50px;'><a href='course.html' target='_blank'>>>查看PHP课程内容安排详情</a><br />
-
-		<font style='style='text-align:center;font-size:30px;font-weight:bold;font-family: "微软雅黑";line-height:50px;''>韩顺平老师的课程牛不牛，看看学员怎么说，自学视频月薪25000!</font><br />
-
-		 <div style='width:270px; height:auto !important; color: #F00;text-align:center; float:left;margin-right:5px;'><img src='images/1.gif'/><br/>自学韩顺平老师视频，月薪25000!</div><div style='width:270px; height:auto !important; color: #F00;text-align:center; float:left;margin-right:5px;'><img src='images/2.gif'/><br/>自学韩顺平老师视频，月薪11k!</div>
-
-		 <div style='width:270px; height:auto !important; color: #F00;text-align:center; float:left;margin-right:5px;'><img src='images/3.gif'/><br/>自学韩顺平老师视频，月薪10000</div>
-
-		<div style='width:270px; height:auto !important; color: #F00;text-align:center; float:left;margin-right:5px;'><img src='images/4.gif'/><br/>自学韩顺平老师视频，月薪8000</div>
-
-		<div style='width:270px; height:auto !important; color: #F00;text-align:center; clear:both;margin-right:5px;'></div><hr/><br/><br/>
-
-		 <div style='width:270px; height:auto !important; color: #F00;text-align:center; float:left;margin-right:5px;'><img src='images/18.gif'/><br/>自学韩顺平老师视频，月薪10000+</div><div style='width:270px; height:auto !important; color: #F00;text-align:center; float:left;margin-right:5px;'><img src='images/21.gif'/><br/>自学韩顺平老师视频，当DBA!</div>
-
-		 <div style='width:270px; height:auto !important; color: #F00;text-align:center; float:left;margin-right:5px;'><img src='images/22.gif'/>自学韩顺平老师视频，年薪23万!<br/></div>
-
-		<div style='width:270px; height:auto !important; color: #F00;text-align:center; float:left;margin-right:5px;'><img src='images/5.gif'/><br/>学员已经开始想报下一期班了!</div>
-
-		<div style='width:270px; height:auto !important; color: #F00;text-align:center; clear:both;margin-right:5px;'></div><hr/><br/><br/>
-
-		 <div style='width:270px; height:auto !important; color: #F00;text-align:center; float:left;margin-right:5px;'><img src='images/6.gif'/><br/>知名公司投资，找上门了!</div><div style='width:270px; height:auto !important; color: #F00;text-align:center; float:left;margin-right:5px;'><img src='images/7.gif'/><br/>自带小板凳，也要参加大牛班。</div>
-
-		 <div style='width:270px; height:auto !important; color: #F00;text-align:center; float:left;margin-right:5px;'><img src='images/8.gif'/><br/>就是等，也要等韩老师开Android班</div>
-
-		<div style='width:270px; height:auto !important; color: #F00;text-align:center; float:left;margin-right:5px;'><img src='images/9.gif'/><br/>感谢韩老师！</div>
-
-		<div style='width:270px; height:auto !important; color: #F00;text-align:center; clear:both;margin-right:5px;'></div><hr/><br/><br/>
-
-		 <div style='width:270px; height:auto !important; color: #F00;text-align:center; float:left;margin-right:5px;'><img src='images/10.gif'/><br/>听闻韩老师开班，凌晨两点，睡不着了!</div><div style='width:270px; height:auto !important; color: #F00;text-align:center; float:left;margin-right:5px;'><img src='images/11.gif'/><br/>带上小伙伴，一起来泰牛程序员</div>
-
-		 <div style='width:270px; height:auto !important; color: #F00;text-align:center; float:left;margin-right:5px;'><img src='images/12.gif'/><br/>对大牛班的特色课，垂涎三尺</div>
-
-		<div style='width:270px; height:auto !important; color: #F00;text-align:center; float:left;margin-right:5px;'><img src='images/13.gif'/><br/>学员因为来不了，建议开远程班.</div>
-
-		<div style='width:270px; height:auto !important; color: #F00;text-align:center; clear:both;margin-right:5px;'></div>
-
-		<div style='width:270px; height:auto !important; color: #F00;text-align:center; clear:both;margin-right:5px;'></div><hr/><br/><br/>
-
-		 <div style='width:270px; height:auto !important; color: #F00;text-align:center; float:left;margin-right:5px;'><img src='images/14.gif'/><br/>对韩老师的感谢!</div><div style='width:270px; height:auto !important; color: #F00;text-align:center; float:left;margin-right:5px;'><img src='images/15.gif'/><br/>学员因为来不了，建议开远程班.</div>
-
-		 <div style='width:270px; height:auto !important; color: #F00;text-align:center; float:left;margin-right:5px;'><img src='images/16.gif'/><br/>建议泰牛程序员，开始Java学科</div>
-
-		<div style='width:270px; height:auto !important; color: #F00;text-align:center; float:left;margin-right:5px;'><img src='images/17.gif'/><br/>老学员，希望以后到泰牛程序员当讲师</div>
-
-		<div style='width:270px; height:auto !important; color: #F00;text-align:center; clear:both;margin-right:5px;'></div>
-
-		<div style='width:270px; height:auto !important; color: #F00;text-align:center; clear:both;margin-right:5px;'></div><hr/><br/><br/>
-
-		 <div style='width:270px; height:auto !important; color: #F00;text-align:center; float:left;margin-right:5px;'><img src='images/23.gif'/><br/>自带小板凳，也要学PHP大牛课程的.</div><div style='width:270px; height:auto !important; color: #F00;text-align:center; float:left;margin-right:5px;'><img src='images/24.gif'/><br/>学员的心声，快到上海来!</div>
-
-		 <div style='width:270px; height:auto !important; color: #F00;text-align:center; float:left;margin-right:5px;'><img src='images/25.gif'/><br/>学员的心声，为什么不开Java!</div>
-
-		<div style='width:270px; height:auto !important; color: #F00;text-align:center; float:left;margin-right:5px;'><img src='images/19.gif'/><br/>学员的心声，快到重庆来!</div>
-
-		<div style='width:270px; height:auto !important; color: #F00;text-align:center; clear:both;margin-right:5px;'></div>
-
-		</p>
-
-		</div>
-
-		<br/>
-
-		<div class="enroll">
-
-				<a target="_blank" href="http://www.itbull.cn/flow.html">
-
-					泰牛程序员-PHP大牛班 ，原价14800元，优惠价8980!
-
-					<strong>我要咨询报名</strong>
-
-
-
-				</a>
-
-			</div>
-
-		<!-- 学习线路 end -->
-
-		<br />
-
-
-
-		<!-- 常见问题 start -->
-
-		<div class="qa">		
-
-			<h2><a href="" name="qas"></a>常见问题</h2>
-
-			<p class="question">1.PHP的就业前景到底怎么样？</p>
-
-			<p>PHP就业前景非常不错, 看看zhaopin网站的招聘PHP程序员就知道:</p>
-
-			<p class="center"><img src="images/q1.png" alt="" /></p>
-
-			<p>这个招聘量每年还在以20%的速度增加，因为中国的信息化还处于起步阶段，需要大量的PHP程序员来建设各种网站，而90%的网站都使用到了PHP技术.</p>
-
-			<p>这个只是北京就有 10902个职位，这是15年11月的数据，而且是在招聘网上登记的，没有登记的到招聘网的更多，一般是1:10 的比例，换言之，北京一地需要的PHP程序员应该在 10万左右， 所以就业前景相当好。</p>
-
-			
-
-			<p class="question">2.相对其他机构而言，你们的培训班为什么这么便宜，不担心人家说 "便宜没好货吗"？</p>
-
-			<p>泰牛程序员的目标不是现在挣多少钱，而是挣了多少影响力，培训了多少人。与其花更多的钱去砸广告，还不如采用免费或低价培训吸引更多的学员，让这些学员出去帮着做宣传，所以我们的学费很低，原价14800元，优惠价8980元，而且还有韩顺平老师亲自授课，泰牛程序员的老师们是从PHP培训领域中挑选出来的非常优秀的讲师。</p>
-
-
-
-			<p>我们这么低廉的学费，就是要造出声势和快速扩大影响力，让更多的人来参加我们的培训后，把我们的好再通过他们亲口宣传出去！犹如360推出免费杀毒软件，倒霉的是竞争者，受益的是老百姓，先通过这种方式把口碑做出来，最后自然会有机会赚钱。</p>
-
-
-
-
-
-			<p class="question">3.上课方式是？上课时间怎么安排？</p>
-
-			<p>全日制上课，面授。<br/>每周上五天课，上午9:00-12:00上课, 下午14:00-17:00上课， 18:00-20:00晚自习。</p>
-
-
-
-			<p class="question">4.如何报名？ 报名的流程是怎么样的？</p>
-
-			<p>联系咨询老师(见右侧的在线客服)，咨询老师会详细和你说明报名的流程的。</p>
-
-
-
-			<p class="question">5.报名条件是什么？0基础或基础弱也能学吗？</p>
-
-			<p>报名条件：本着对学员高度负责的态度，泰牛程序员并不是交钱就能学，所有学员入学我们都要考核，适合的我们才收。
-
-			<br/>PHP基础班课程，就是从入门讲起，没有基础或基础薄弱的学员可以报名基础班，但是必须符合我们的报名条件。我们不硬性要求学生必须有开发基础，但需要考察你的学习能力及是否适合从事软件开发工作。
-
-			</p>
-
-
-
-			<p class="question">6.PHP程序员现在就业薪资怎么样？</p>
-
-			<p>在北京PHP开发工程师的平均薪水已经到14200元（数据统计来职友集），而且目前还保持强劲的发展势头。</p>
-
-			<p class="center"><img src="images/q2.png" alt="" /></p>
-
-
-
-			<p class="question">7.PHP只能开发网站，是不是很单一呢？就不能开发出别的么?</p>
-
-			<p>PHP技术是专门做网站开发的，请不要小看网站开发，它包括的范围是很广的: 比如论坛(天涯，清华水木等)、电子商务网(淘宝、ebay等)、sns网站(比如世纪佳缘、百合网、人人网等)、cms（内容管理系统）网站(比如优酷、土豆、中关村下载网站)， 世界上排名100的网站都使用到PHP技术，你说单一吗? 而且每个网站中还有很多应用（比如支付，短信，彩信等，webservice）等也要使用到PHP技术？你说单一吗? </p>
-
-			<p>PHP技术是专门做WEB网站开发的，所有只要是做上面说的网站开发，PHP技术就是公司的优先考虑，目前一些网站都开始选用PHP来改写. LAMP(linux /Unix+ apache + mysql 数据库  + PHP) 或者  LNMP(linux /Unix+ Nginx + mysql 数据库  + PHP)。</p>
-
-
-
-			<p class="question">8.PHP程序员主要入职哪些公司?</p>
-
-			<p>大多数互联网公司基本上都会招聘PHP程序员，比如新浪、腾讯、阿里、淘宝网、百度、360等等。</p>
-
-		</div>
-
-		<!-- 常见问题 end -->
-
-		<br />
-
-
-
-		<!-- offer start -->
-
-		<div class="offer">
-
-			<h2>更重要的是，还有这一大波公司等着给你发offer</h2>
-
-			<div class="company">
-
-				<ul>
-
-					<li><img src="images/bd.jpg" alt="" /></li>
-
-					<li><img src="images/tex.jpg" alt="" /></li>
-
-					<li><img src="images/xl.jpg" alt="" /></li>
-
-					<li><img src="images/sh.jpg" alt="" /></li>
-
-					<li><img src="images/360.jpg" alt="" /></li>
-
-					<li><img src="images/jd.jpg" alt="" /></li>
-
-					<li><img src="images/yy.jpg" alt="" /></li>
-
-					<li><img src="images/albb.jpg" alt="" /></li>
-
-					<li><img src="images/mt.jpg" alt="" /></li>
-
-				</ul>
-
-			</div>
-
-			<div class="job">
-
-				<h3>泰牛程序员<br />为您提供全程就业服务</h3>
-
-				<ul>
-
-					<li><em>√</em> 就业专员提供就业指导</li>
-
-					<li><em>√</em> 多家合作企业内推工作</li>
-
-					<li><em>√</em> 推荐就业为止 </li>
-
-				</ul>
-
-			</div>
-
-			
-
-			<div style="clear:both;"></div>
-
-			<div class="enroll">
-
-				<a target="_blank" href="http://www.itbull.cn/flow.html">
-
-					泰牛程序员-PHP大牛班 ，原价14800元，优惠价8980!
-
-					<strong>我要咨询报名</strong>
-
-				</a>
-
-			</div>
-
-		
-
-
-
-		</div>
-
-		<!-- offer end -->
-
-		<br />
-
-
-
-		<!-- 报名流程 start -->
-
-		<div class="registration">
-
-			<h2>报名流程</h2>
-
-			<p class="question">入学流程</p>
-
-			<p>参加培训的学员按照下面的汇款方式缴纳500元座位预订金（报名费），该座位预订金将从您的学费中扣除。</p>
-
-
-
-			<p class="question">报名费确认</p>
-
-			<p>将您的汇款情况电话或者网上告知咨询老师（主要包括汇款人姓名、所报班级、汇款金额、汇出银行、汇入银行、汇款时间等），咨询老师在确认收到汇款后会及时跟您确认座位预订成功。</p>
-
-
-
-			<p class="question">报到</p>
-
-			<p>所有学员须在开课前一天之前来学校报到，报到时须携带身份证原件，填写学籍卡，签订学员守则。要安排住宿的外地学员请在开课三天之前到北京（注：节假日除外）并在买好车票告知咨询老师，以便我们提前安排工作人员协助您安排住宿。</p>
-
-
-
-			<p class="question">培训费用缴纳：</p>
-
-			<p>所有学员在开课前一周按照如下三种方式缴纳学费。</p>
-
-			<p>(1) 现金缴纳：您可以到我们的培训中心所在地亲自缴纳。</p>
-
-			<p>(2) 银行汇款：您可以通过银行汇款的方式缴纳您的学费，参见下面的汇款帐号。</p>
-
-			<p>(3) 网银转账：您可以通过网上银行转账的方式缴纳您的学费，参见下面汇款账号。</p>
-
-
-
-			<p class="question">如何交学费同学们可以将学费转账到以下银行卡：</p>
-
-			<p>工商银行：6222 0202 0000 6295 253（开户名：韩顺平，开户支行：中关村成府路支行）</p>
-
-			<p>招商银行：9555 5001 0125 6823（开户名：韩顺平，开户支行：北京分行大运村支行）</p>
-
-			<p>支付宝：imeixue@126.com（开户名：韩顺平） </p>
-
-			<p>转账之后，通过QQ发转账截图给客服老师，静待电话\邮件通知即可，后面会慢慢走进入学流程。</p>
-
-
-
-			<p class="question">客服联系方式</p>
-
-			
-
-			<p>客服电话：</p>
-
-			<p>座机：010-57180327</p>
-
-			<p>手机：136-9157-3620</p>
-
-			<p>手机：186-1034-4780</p>
-
-			<br />
-
-			<p>客服QQ：</p>
-
-			<p>3274261751 (李老师)</p>
-
-			<p>3163838458 (薛老师)</p>
-
-			<p>同学们一定要看清楚QQ号码哈，以防上当受骗</p>
-
-		</div>
-
-		<!-- 报名流程 end -->
-
-		<br/>
-
-
-
-		<!-- 大牛 start -->
-
-		<div class="bull">
-
-			<h2>五个月后，完美逆袭为PHP大牛</h2>
-
-			<div class="enroll">
-
-				<a target="_blank" href="http://www.itbull.cn/flow.html">
-
-					泰牛程序员-PHP大牛班 ，原价14800元，优惠价8980!
-
-					<strong>我要咨询报名</strong>
-
-				</a>
-
-			</div>
-
-
-
-		</div>
-
-		<!-- 大牛 end -->
-
-	</div>
-
-    <!-- 主体内容 end -->
-
-	<br />
-
-	
-
-	<!-- 底部 start -->
-
-	<div class="footer">
-
-		<div class="wrapper">
-
-			<p>泰牛程序员PHP学院-培养中国抢手的PHP程序员</p>
-
-			<p>版权所有：　2016北京每学教育科技有限公司</p>
-
-			<p>座　　机：　010-57180327</p>
-
-			<p>手　　机：　136-9157-3620</p>
-
-			<p>电　　话：　186-1034-4780</p>
-
-			<p>邮　　箱：　3274261751@qq.com</p>
-
-			<p>地　　址：　北京市海淀区信息路甲28号C座（二层）02B室</p>
-
-			<p>ICP 备案：　京ICP备15048336号</p>
-
-		</div>
-
-		<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256939947'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1256939947%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
-
-	</div>
-
-	
-
-	<!-- 底部 end-->
-
-
-
-
-
-	<!--在线客服Begin-->
-
-	<div id="floatTools" class="rides-cs">
-
-		<div class="floatL">
-
-			<a style="display: block" id="aFloatTools_Show" class="btnOpen" title="查看在线客服" onclick="javascript:$('#divFloatToolsView').animate({width: 'show', opacity: 'show'}, 'normal',function(){ $('#divFloatToolsView').show();kf_setCookie('RightFloatShown', 0, '', '/', 'www.shopnc.net'); });$('#aFloatTools_Show').attr('style','display:none');$('#aFloatTools_Hide').attr('style','display:block');" href="javascript:void(0);">
-
-			展开</a>
-
-			<a style="display: none" id="aFloatTools_Hide" class="btnCtn" title="关闭在线客服" onclick="javascript:$('#divFloatToolsView').animate({width: 'hide', opacity: 'hide'}, 'normal',function(){ $('#divFloatToolsView').hide();kf_setCookie('RightFloatShown', 1, '', '/', 'www.shopnc.net'); });$('#aFloatTools_Show').attr('style','display:block');$('#aFloatTools_Hide').attr('style','display:none');" href="javascript:void(0);">
-
-			收缩</a> </div>
-
-		<div id="divFloatToolsView" class="floatR" style="display: none">
-
-			<div class="cn">
-
-				<h3 class="titZx">泰牛程序员客服</h3>
-
-				<ul>
-
-					
-
-					<li><span>小鹏老师</span>
-
-					<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=3163838458&amp;site=qq&amp;menu=yes">
-
-					<img border="0" src="http://wpa.qq.com/pa?p=2:123456:51"  /></a></li>
-
-
-
-					<li><span>沐沐老师</span>
-
-					<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=3274261751&amp;site=qq&amp;menu=yes">
-
-					<img border="0" src="http://wpa.qq.com/pa?p=2:123456:51"/></a>
-
-					</li>
-
-					
-
-					
-
-					<!--
-
-					<li><span>免费试听</span>
-
-					<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3274261751&site=qq&menu=yes">
-
-					<img border="0" src="http://wpa.qq.com/pa?p=2:123456:51"  /></a></li>-->
-
-					<li style="text-align:center; font-weight:bold;"><span style="color:#f00; ">电话：13691573620</span></li>
-
-					<li style="text-align:center; font-weight:bold;"><span style="color:#f00; ">电话：18610344780</span></li>
-
-					<li style="text-align:center; font-weight:bold;"><span style="color:#0070C0; ">工作时间: 周一至周五</span></li>
-
-					<li style="text-align:center; font-weight:bold;"><span style="color:#0070C0; ">在线时间: 9:00-20:00</span></li>
-
-				</ul>
-
-				
-
-				<dl>
-
-					<dt><img src="images/wx.png" alt="" width="132" height="132" /></dt>
-
-					<dd>微信扫一扫</dd>
-
-				</dl>
-
-				<ul>
-
-					<li style="text-align:center;"><a href="">点击关注新浪微博</a></li>
-
-				</ul>
-
-			</div>
-
-		</div>
-
-	</div>
-
-	<!--在线客服End-->
-
-	
-
-	<!-- 首页弹窗效果 start -->
-
-	<div id="index_popup2" style="display:none;">
-
-		<div class="content">
-
-			<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=3274261751&amp;site=qq&amp;menu=yes">
-
-					<img border='0' src="images/popup2.gif" alt="" width='590' height='420' /></a>
-
-		</div>
-
-		<a href="#" id="close_btn2"></a>
-
-	</div>
-
-	<!-- 首页弹窗效果 end -->
-
-
-
-
-
-	<!-- 右下角弹窗 start -->
-
-	
-
-	
-
-	<div id="webim" style="display:none;">
-
-		<dl class="dlstyle">
-
-			<dt class="dtstyle"><strong id="webim_title">2016年想学前端与H5开发,选泰牛</strong><span id="closebtn">关闭</span></dt>
-
-		</dl>
-
-		<dl>
-
-			<dd>
-
-			<a href="http://www.itbull.cn/h5/index.html" id="webim_link" target="_blank"><img id="webim_img" src="images/" style="width: 280px; height: 188px"></a>
-
-			</dd>
-
-		</dl>
-
-	</div>
-
-	
-
-	<!-- 右下角弹窗 end -->
-
-
-
-
-
-	<script type="text/javascript">
-
-		//首页正中间弹窗
-
-		$(function(){
-
-			//显示
-
-			$("#index_popup2").fadeIn(1000);
-
-			//点击消失
-
-			$("#close_btn2").click(function(){
-
-				$("#index_popup2").fadeOut(1000);
-
-				return false;
-
-			});
-
-
-
-			
-
-		});
-
-	
-
-		
-
-		//右下角弹窗
-
-		$(function(){
-
-			//显示
-
-			$("#webim").fadeIn(1000);
-
-			//点击消失
-
-			$("#closebtn").click(function(){
-
-				$("#webim").fadeOut(1000);
-
-			});
-
-		});
-
-
-
-		//右下角图片随机弹出，需要在此处设置随机的图片
-
-		var pics = ['images/h5.png'];
-
-		
-
-		var idx  = Math.floor(Math.random() * pics.length);
-
-		console.log(idx);
-
-		$("#webim_img").attr('src',pics[idx]);
-
-	</script>
-
-	<!--主动推送百度-->
-
-<script>
-
-(function(){
-
-    var bp = document.createElement('script');
-
-    bp.src = '//push.zhanzhang.baidu.com/push.js';
-
-    var s = document.getElementsByTagName("script")[0];
-
-    s.parentNode.insertBefore(bp, s);
-
-})();
-
-</script>
+  </div>
+  <div class="head2">
+    <div class="wrap">
+      <div class="logo flt"><a href="/"><img src="/skin/images/logo.png"/></a></div>
+      <div class="frt tel">
+        <h3>15510464942</h3>
+        <p>全国咨询热线</p>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="menu">
+    <div class="wrap">
+      <ul>
+        <li  class='on'><a href="/">网站首页
+          <label></label>
+          </a></li>
+        
+        <li><a href="/a/peixunkecheng/">热门课程
+          <label></label>
+          </a></li>
+        
+        <li><a href="/a/shizituandui/">师资团队
+          <label></label>
+          </a></li>
+        
+        <li><a href="/a/chenggonganli/">优秀学员
+          <label></label>
+          </a></li>
+        
+        <li><a href="/a/xiangguanfuwu/">课程服务
+          <label></label>
+          </a></li>
+        
+        <li><a href="/a/tongzhizixun/">最新通知
+          <label></label>
+          </a></li>
+        
+      </ul>
+    </div>
+    <div class="menu_wrap"></div>
+    <div class="clear"></div>
+  </div>
+</div>
+ 
+<!-------------------------------------- 头部结束 --------------------------------------> 
+<!-------------------------------------- 内容开始 --------------------------------------> 
+<!--class="animated fast" data-animation="fadeInDown"-->
+<div class="mainer">
+      <div class="banner_owl">
+    <div class="banner">
+        <!--
+        <div class="item" style="background:url(/uploads/200210/1-200210121G0B7.jpg) no-repeat center center;background-size:cover;"></div><div class="item" style="background:url(/uploads/210201/1-210201163603253.jpg) no-repeat center center;background-size:cover;"></div> </div>-->
+        <a target="_blank" href="https://www.sohu.com"><div class="item" style="background:url(/uploads/200210/1-200210121G0B7.jpg) no-repeat center center;background-size:cover;"></div></a><a target="_blank" href="https://www.bilibili.com/video/BV1fh411y7R8?from=search&seid=9241867192734979036"><div class="item" style="background:url(/uploads/210201/1-210201163603253.jpg) no-repeat center center;background-size:cover;"></div></a></div>
+    <div class="cur"><span class="prev flt"><img src="/skin/images/cur1.png"/></span><span class="next frt"><img src="/skin/images/cur2.png"/></span></div>
+  </div>
+      <div class="page_list">
+    <div class="wrap">
+          <div class="page_top animated more-fast fadeInUp" data-animation="fadeInUp">
+        <div class="wrap1">
+              <ul>
+            <li>
+                  <h3><span class="timer" data-to="19" data-speed="1500">19</span>年</h3>
+                  <p>程序老司机</p>
+                </li>
+            <li class="li_cur"></li>
+            <li>
+                  <h3><span class="timer" data-to="10000" data-speed="1500">10000</span>+</h3>
+                  <p>韩顺平培训学员</p>
+                </li>
+            <li class="li_cur"></li>
+            <li>
+                  <h3><span class="timer" data-to="3000000" data-speed="1500">3000000</span>+</h3>
+                  <p>韩顺平百度收录</p>
+                </li>
+          </ul>
+              <div class="bg"><img src="/skin/images/bg.png" /></div>
+            </div>
+      </div>
+          <div class="page1 page">
+        <div class="page_tit animated fast fadeInUp" data-animation="fadeInUp">
+              <h3>腾讯课堂<span>·精品课程</span></h3>
+              <p></p>
+            </div>
+        <div class="course_list  animated slow fadeInUp" data-animation="fadeInUp"> <div class="course_tit"> <span class="flt">课程：</span>
+            <ul>
+                  
+                  <li class='on'><a href="javascript:void(0)">Java互联网架构师</a></li>
+                  
+                  <li ><a href="javascript:void(0)">JavaEE高薪就业班</a></li>
+                  
+                  <li ><a href="javascript:void(0)">大数据高薪就业班</a></li>
+                  
+                </ul>
+            <span class="frt"><a href="/a/peixunkecheng/">更多课程 ></a></span> </div>
+              <div class="list_box"> <div class="item">
+                  <ul>
+                <li>
+                      <div class="list">
+                    <div class="img"> <img src="/uploads/210201/1-210201200314460.jpg" width="434" height="274"/> 
+                          <!--<div class="img_text">
+                        <p>主讲人：韩顺平</p>
+                        <h3>2017年会计培训</h3>
+                        <h3>新手入门</h3>
+                        <h3>基础入门</h3>
+                      </div>--> 
+                        </div>
+                    <div class="text">
+                          <h3><a href="/plus/view.php?aid=53">【零基础入门】2021韩顺平 零基础学Java</a></h3>
+                          <div class="div_tips"> <label>架构师</label><label>源码剖析</label> 
+                 </div>
+                          <p>本套Java教程非常适合零基础的学员观看，本教程全面讲解了Java基础的方方面面。每一个知识点都讲解的非常细致，通俗易懂...[<a href="/plus/view.php?aid=53" target="_blank" style="color: #0a62bb;">详细</a>]</p>
+                          <!--<div class="btn"><a href="/a/zaixianbaoming">了解详情</a></div>-->
+                        <div class="btn"><a href="/plus/view.php?aid=53" target="_blank">了解更多</a></div>
+                        </div>
+                    <div class="clear"></div>
+                  </div>
+                    </li>
+<li>
+                      <div class="list">
+                    <div class="img"> <img src="/uploads/210201/1-210201212403D0.png" width="434" height="274"/> 
+                          <!--<div class="img_text">
+                        <p>主讲人：韩老师  张老师</p>
+                        <h3>2017年会计培训</h3>
+                        <h3>新手入门</h3>
+                        <h3>基础入门</h3>
+                      </div>--> 
+                        </div>
+                    <div class="text">
+                          <h3><a href="/plus/view.php?aid=1">【通俗易懂】2021韩顺平 一周学会Linux</a></h3>
+                          <div class="div_tips"> <label>新手入门</label><label>基础内容</label><label>实际操作</label> 
+                 </div>
+                          <p>本套课程的内容分为七大部分，涵盖了Linux的方方面面。课程分为基础篇,实际操作篇,高级篇,java定制篇,大数据定制篇, pytho...[<a href="/plus/view.php?aid=1" target="_blank" style="color: #0a62bb;">详细</a>]</p>
+                          <!--<div class="btn"><a href="/a/zaixianbaoming">了解详情</a></div>-->
+                        <div class="btn"><a href="/plus/view.php?aid=1" target="_blank">了解更多</a></div>
+                        </div>
+                    <div class="clear"></div>
+                  </div>
+                    </li>
+
+              </ul>
+                </div><div class="item">
+                  <ul>
+                
+              </ul>
+                </div><div class="item">
+                  <ul>
+                
+              </ul>
+                </div> </div>
+            </div>
+      </div>
+        </div>
+    <div class="page page2">
+          <div class="wrap">
+        <div class="page_tit  animated more-fast" data-animation="fadeInLeft">
+              <h3>在线教育<span>·师资团队</span></h3>
+              <p></p>
+            </div>
+        <div class="team_owl animated fast" data-animation="fadeInUp">
+              <div class="owl"> <div class="item"> <a href="/a/shizituandui/64.html">
+              <div class="img"><img src="/uploads/allimg/200211/1-2002111030510-L.jpg"/>
+                <p>北京大学计算机本科</p>
+              </div>
+              <div class="text">
+                <h3>韩老师</h3>
+                <p>对教师招聘考试和资格证考试均有深入研究，理论功底扎实，授课思路清晰，深受学生欢迎。...</p>
+              </div>
+              </a> </div>
+<div class="item"> <a href="/a/shizituandui/63.html">
+              <div class="img"><img src="/uploads/allimg/200211/1-2002111029440-L.jpg"/>
+                <p>广州理工大学会计学本科</p>
+              </div>
+              <div class="text">
+                <h3>杨老师</h3>
+                <p>对教师招聘考试和资格证考试均有深入研究，理论功底扎实，授课思路清晰，深受学生欢迎。...</p>
+              </div>
+              </a> </div>
+<div class="item"> <a href="/a/shizituandui/51.html">
+              <div class="img"><img src="/uploads/allimg/200211/1-2002110959140-L.jpg"/>
+                <p>北京理工大学会计学本科</p>
+              </div>
+              <div class="text">
+                <h3>羊老师</h3>
+                <p>对教师招聘考试和资格证考试均有深入研究，理论功底扎实，授课思路清晰，深受学生欢迎。...</p>
+              </div>
+              </a> </div>
+<div class="item"> <a href="/a/shizituandui/50.html">
+              <div class="img"><img src="/uploads/allimg/200211/1-200211095U90-L.jpg"/>
+                <p>北京理工大学会计学本科</p>
+              </div>
+              <div class="text">
+                <h3>胡老师</h3>
+                <p>对教师招聘考试和资格证考试均有深入研究，理论功底扎实，授课思路清晰，深受学生欢迎。...</p>
+              </div>
+              </a> </div>
+<div class="item"> <a href="/a/shizituandui/49.html">
+              <div class="img"><img src="/uploads/allimg/200211/1-200211095S60-L.jpg"/>
+                <p>北京理工大学会计学本科</p>
+              </div>
+              <div class="text">
+                <h3>张老师</h3>
+                <p>对教师招聘考试和资格证考试均有深入研究，理论功底扎实，授课思路清晰，深受学生欢迎。...</p>
+              </div>
+              </a> </div>
+<div class="item"> <a href="/a/shizituandui/48.html">
+              <div class="img"><img src="/uploads/allimg/200211/1-200211095R00-L.jpg"/>
+                <p>北京理工大学会计学本科</p>
+              </div>
+              <div class="text">
+                <h3>周老师</h3>
+                <p>对教师招聘考试和资格证考试均有深入研究，理论功底扎实，授课思路清晰，深受学生欢迎。...</p>
+              </div>
+              </a> </div>
+<div class="item"> <a href="/a/shizituandui/47.html">
+              <div class="img"><img src="/uploads/allimg/200211/1-200211095P20-L.jpg"/>
+                <p>北京理工大学会计学本科</p>
+              </div>
+              <div class="text">
+                <h3>李老师</h3>
+                <p>对教师招聘考试和资格证考试均有深入研究，理论功底扎实，授课思路清晰，深受学生欢迎。...</p>
+              </div>
+              </a> </div>
+<div class="item"> <a href="/a/shizituandui/46.html">
+              <div class="img"><img src="/uploads/allimg/200211/1-200211095G40-L.jpg"/>
+                <p>北京理工大学会计学本科</p>
+              </div>
+              <div class="text">
+                <h3>陈老师</h3>
+                <p>对教师招聘考试和资格证考试均有深入研究，理论功底扎实，授课思路清晰，深受学生欢迎。...</p>
+              </div>
+              </a> </div>
+ </div>
+            </div>
+      </div>
+        </div> 
+    <div class="page page3">
+          <div class="wrap">
+        <div class="page_tit animated more-fast" data-animation="fadeInRight">
+              <h3>在线教育<span>·优秀学员</span></h3>
+              <p></p>
+            </div>
+        <div class="case_list animated more-fast" data-animation="fadeInLeft">
+              <ul>
+            <li> <a href="/a/chenggonganli/43.html">
+              <div class="img"><img src="/uploads/allimg/200211/1-200211093211109.jpg"/>
+                <div class="img_text"><span>林同学</span>
+                  <p>工资： (9000)</p>
+                </div>
+              </div>
+              <div class="text">
+                <p>因为家庭条件不好，高中毕业就没有在读了，感谢育德会计给予我的帮助，有了技能就不愁了。...</p>
+              </div>
+              </a> </li>
+<li> <a href="/a/chenggonganli/45.html">
+              <div class="img"><img src="/uploads/allimg/200211/1-20021109330VK.jpg"/>
+                <div class="img_text"><span>王同学</span>
+                  <p>工资： (9800)</p>
+                </div>
+              </div>
+              <div class="text">
+                <p>因为家庭条件不好，高中毕业就没有在读了，感谢育德会计给予我的帮助，有了技能就不愁了。...</p>
+              </div>
+              </a> </li>
+<li> <a href="/a/chenggonganli/44.html">
+              <div class="img"><img src="/uploads/allimg/200211/1-200211093233L0.jpg"/>
+                <div class="img_text"><span>周同学</span>
+                  <p>工资： (8800)</p>
+                </div>
+              </div>
+              <div class="text">
+                <p>因为家庭条件不好，高中毕业就没有在读了，感谢育德会计给予我的帮助，有了技能就不愁了。...</p>
+              </div>
+              </a> </li>
+<li> <a href="/a/chenggonganli/42.html">
+              <div class="img"><img src="/uploads/allimg/200211/1-20021109313K19.jpg"/>
+                <div class="img_text"><span>张同学</span>
+                  <p>工资： (12000)</p>
+                </div>
+              </div>
+              <div class="text">
+                <p>因为家庭条件不好，高中毕业就没有在读了，感谢育德会计给予我的帮助，有了技能就不愁了。...</p>
+              </div>
+              </a> </li>
+<li> <a href="/a/chenggonganli/41.html">
+              <div class="img"><img src="/uploads/allimg/200211/1-20021109310b02.jpg"/>
+                <div class="img_text"><span>李同学</span>
+                  <p>工资： (8000)</p>
+                </div>
+              </div>
+              <div class="text">
+                <p>因为家庭条件不好，高中毕业就没有在读了，感谢育德会计给予我的帮助，有了技能就不愁了。...</p>
+              </div>
+              </a> </li>
+<li> <a href="/a/chenggonganli/40.html">
+              <div class="img"><img src="/uploads/allimg/200211/1-2002110930210-L.jpg"/>
+                <div class="img_text"><span>陈同学</span>
+                  <p>工资： (6000)</p>
+                </div>
+              </div>
+              <div class="text">
+                <p>因为家庭条件不好，高中毕业就没有在读了，感谢育德会计给予我的帮助，有了技能就不愁了。...</p>
+              </div>
+              </a> </li>
+
+          </ul>
+            </div>
+        <div class="more"><a href="/a/chenggonganli/">更多案例</a></div>
+      </div>
+        </div>
+    <div class="page page4">
+          <div class="page_tit animated more-fast" data-animation="fadeInUp"> <h3>在线教育<span>·教学环境</span></h3>
+        <p></p>
+      </div>
+          <div class="hj_list">
+        <ul class="animated more-fast" data-animation="fadeInUp">
+              <li>
+            <div class="img1"><img src="/uploads/allimg/200211/1-2002110913460-L.jpg" /></div>
+          </li>
+<li>
+            <div class="img1"><img src="/uploads/allimg/200211/1-2002110913330-L.jpg" /></div>
+          </li>
+<li>
+            <div class="img1"><img src="/uploads/200211/1-200211091321260.jpg" /></div>
+          </li>
+<li>
+            <div class="img1"><img src="/uploads/allimg/200211/1-2002110912590-L.jpg" /></div>
+          </li>
+<li>
+            <div class="img1"><img src="/uploads/allimg/200211/1-2002110912490-L.jpg" /></div>
+          </li>
+<li>
+            <div class="img1"><img src="/uploads/allimg/200211/1-2002110912400-L.jpg" /></div>
+          </li>
+<li>
+            <div class="img1"><img src="/uploads/allimg/200211/1-2002110912280-L.jpg" /></div>
+          </li>
+<li>
+            <div class="img1"><img src="/uploads/allimg/200211/1-2002110912180-L.jpg" /></div>
+          </li>
+<li>
+            <div class="img1"><img src="/uploads/allimg/200211/1-2002110912080-L.jpg" /></div>
+          </li>
+<li>
+            <div class="img1"><img src="/uploads/allimg/200211/1-2002110912000-L.jpg" /></div>
+          </li>
+<li>
+            <div class="img1"><img src="/uploads/allimg/200211/1-2002110911510-L.jpg" /></div>
+          </li>
+<li>
+            <div class="img1"><img src="/uploads/allimg/200211/1-2002110911260-L.jpg" /></div>
+          </li>
+
+            </ul>
+        <div class="clear"></div>
+      </div>
+        </div>
+    <div class="page page5">
+          <p class="animated more-fast" data-animation="fadeInUp">打造湖南会计实战培训第一品牌。立即申请免费试听课机会！<a href="/a/lianxiwomen/"><span>联系我们</span></a> </p>
+        </div>
+    <div class="page page6">
+          <div class="wrap">
+        <div class="page_tit animated more-fast" data-animation="fadeInDown">
+              <h3>在线教育<span>·最新通知</span></h3>
+              <p></p>
+            </div>
+        <div class="news_list animated fast" data-animation="fadeInUp">
+              <div class="owl"> <div class="item"> <a href="/a/tongzhizixun/11.html">
+              <div class="img"><img src="/uploads/200210/1-200210160219A5.jpg"/></div>
+              <div class="text">
+                <h3>
+                  <label>最新</label>
+                  <span>财经素养教育必要且急迫 </span></h3>
+                <p>财经素养的培育更重要的是丰富学生的价值观、人生观，尤其是...</p>
+                <div class="bottom"> <span class="span1">最新通知</span> <span class="span2">2020-02-10</span> </div>
+              </div>
+              </a> </div>
+<div class="item"> <a href="/a/tongzhizixun/10.html">
+              <div class="img"><img src="/uploads/200210/1-200210160210C1.jpg"/></div>
+              <div class="text">
+                <h3><span>挫折，孩子不可或缺的“生长素” </span></h3>
+                <p>近段时间，连续发生几起孩子轻生事件，让人心头沉重。最让人...</p>
+                <div class="bottom"> <span class="span1">最新通知</span> <span class="span2">2020-02-10</span> </div>
+              </div>
+              </a> </div>
+<div class="item"> <a href="/a/tongzhizixun/9.html">
+              <div class="img"><img src="/uploads/200210/1-200210160200950.jpg"/></div>
+              <div class="text">
+                <h3><span>学习 请把孩子“挂”起来 </span></h3>
+                <p>几乎所有的专家名人都会告诉你，学习不是最重要的，而是全面...</p>
+                <div class="bottom"> <span class="span1">最新通知</span> <span class="span2">2020-02-10</span> </div>
+              </div>
+              </a> </div>
+<div class="item"> <a href="/a/tongzhizixun/8.html">
+              <div class="img"><img src="/uploads/200210/1-200210160150443.jpg"/></div>
+              <div class="text">
+                <h3><span>如何利用寒假给中学生补补亲情课 </span></h3>
+                <p>眼下正值寒假，满满的时间表、叠加的辅导班和无数的作业，成...</p>
+                <div class="bottom"> <span class="span1">最新通知</span> <span class="span2">2020-02-10</span> </div>
+              </div>
+              </a> </div>
+<div class="item"> <a href="/a/tongzhizixun/7.html">
+              <div class="img"><img src="/uploads/200210/1-200210160134Z4.jpg"/></div>
+              <div class="text">
+                <h3><span>孩子沉迷于网络游戏 家长一味施高压效果 </span></h3>
+                <p>管孩子不是钉钉子，只管敲就行。钉子没自我意识，孩子可有自...</p>
+                <div class="bottom"> <span class="span1">最新通知</span> <span class="span2">2020-02-10</span> </div>
+              </div>
+              </a> </div>
+<div class="item"> <a href="/a/tongzhizixun/6.html">
+              <div class="img"><img src="/uploads/200210/1-200210160121591.jpg"/></div>
+              <div class="text">
+                <h3><span>家教指南：教考时评 辅导千万条 耐心第 </span></h3>
+                <p>不做作业，充满欢笑。一做作业，鸡飞狗跳。不少家长吐槽自己...</p>
+                <div class="bottom"> <span class="span1">最新通知</span> <span class="span2">2020-02-10</span> </div>
+              </div>
+              </a> </div>
+<div class="item"> <a href="/a/tongzhizixun/5.html">
+              <div class="img"><img src="/uploads/200210/1-200210160111154.jpg"/></div>
+              <div class="text">
+                <h3><span>家庭是孩子真正的起跑线 </span></h3>
+                <p>为人父母，都希望自己的孩子学有所成。起跑线确实存在，只不...</p>
+                <div class="bottom"> <span class="span1">最新通知</span> <span class="span2">2020-02-10</span> </div>
+              </div>
+              </a> </div>
+<div class="item"> <a href="/a/tongzhizixun/4.html">
+              <div class="img"><img src="/uploads/200210/1-200210160102328.jpg"/></div>
+              <div class="text">
+                <h3><span>中小学要知道的急救知识 </span></h3>
+                <p>让学生掌握正确的突发灾害逃生要领，不仅可以保证灾害发生时...</p>
+                <div class="bottom"> <span class="span1">最新通知</span> <span class="span2">2020-02-10</span> </div>
+              </div>
+              </a> </div>
+<div class="item"> <a href="/a/tongzhizixun/3.html">
+              <div class="img"><img src="/uploads/200210/1-200210160053637.jpg"/></div>
+              <div class="text">
+                <h3><span>学校应如何落实家庭教育指导责任 </span></h3>
+                <p>近年来，家庭教育指导日渐成为学校的一项重要职能。2015年10月...</p>
+                <div class="bottom"> <span class="span1">最新通知</span> <span class="span2">2020-02-10</span> </div>
+              </div>
+              </a> </div>
+<div class="item"> <a href="/a/tongzhizixun/2.html">
+              <div class="img"><img src="/uploads/200210/1-200210160044b8.jpg"/></div>
+              <div class="text">
+                <h3><span>建立共享理解，打通家庭学校社会教育 </span></h3>
+                <p>家庭教育、学校教育、社会教育的结合是一部交响乐。但不得不...</p>
+                <div class="bottom"> <span class="span1">最新通知</span> <span class="span2">2020-02-10</span> </div>
+              </div>
+              </a> </div>
+ </div>
+            </div>
+        <div class="more"><a href="/a/tongzhizixun/">更多资讯</a></div>
+      </div>
+        </div>
+    <div class="page page7">
+          <div class="wrap">
+        <div class="page_tit animated more-fast" data-animation="fadeInDown"> <h3>在线教育<span>·合作伙伴</span></h3>
+              <p></p>
+            </div>
+        <div class="link_list animated fast" data-animation="fadeInDown">
+              <ul>
+            <li><a href="javascript:void(0)"><img src="/uploads/allimg/200211/1-2002110ZZ00-L.jpg"/></a></li>
+<li><a href="javascript:void(0)"><img src="/uploads/allimg/200211/1-2002110ZU30-L.jpg"/></a></li>
+<li><a href="javascript:void(0)"><img src="/uploads/allimg/200211/1-2002110ZS90-L.jpg"/></a></li>
+<li><a href="javascript:void(0)"><img src="/uploads/allimg/200211/1-2002110ZR90-L.jpg"/></a></li>
+<li><a href="javascript:void(0)"><img src="/uploads/allimg/200211/1-2002110ZQ90-L.jpg"/></a></li>
+<li><a href="javascript:void(0)"><img src="/uploads/allimg/200211/1-2002110ZQ00-L.jpg"/></a></li>
+<li><a href="javascript:void(0)"><img src="/uploads/allimg/200211/1-2002110ZK70-L.jpg"/></a></li>
+<li><a href="javascript:void(0)"><img src="/uploads/allimg/200211/1-2002110ZJ80-L.jpg"/></a></li>
+<li><a href="javascript:void(0)"><img src="/uploads/allimg/200211/1-2002110ZI80-L.jpg"/></a></li>
+<li><a href="javascript:void(0)"><img src="/uploads/allimg/200211/1-2002110ZH90-L.jpg"/></a></li>
+<li><a href="javascript:void(0)"><img src="/uploads/allimg/200211/1-2002110ZH10-L.jpg"/></a></li>
+<li><a href="javascript:void(0)"><img src="/uploads/allimg/200211/1-2002110ZG30-L.jpg"/></a></li>
+
+          </ul>
+              <div class="clear"></div>
+            </div>
+      </div>
+        </div>
+    <div class="page page8">
+          <div class="wrap">
+        <div class="page8_list">
+              <ul>
+            <li class="animated slow1" data-animation="fadeInDown"><a href="javascript:void(0)"><span class="span1"></span>
+              <label>考试时间</label>
+              </a></li>
+            <li class="animated slow2" data-animation="fadeInDown"><a href="javascript:void(0)"><span class="span2"></span>
+              <label>免费学习</label>
+              </a></li>
+            <li class="animated slow3" data-animation="fadeInDown"><a href="javascript:void(0)"><span class="span3"></span>
+              <label>免费试听</label>
+              </a></li>
+            <li class="animated slow4" data-animation="fadeInDown"><a href="javascript:void(0)"><span class="span4"></span>
+              <label>免费直播</label>
+              </a></li>
+            <li class="animated slow5" data-animation="fadeInDown"><a href="javascript:void(0)"><span class="span5"></span>
+              <label>免费资料</label>
+              </a></li>
+            <li class="animated slow6" data-animation="fadeInDown"><a href="javascript:void(0)"><span class="span6"></span>
+              <label>优惠券</label>
+              </a></li>
+            <li class="animated slow7" data-animation="fadeInDown"><a href="javascript:void(0)"><span class="span7"></span>
+              <label>推荐工作</label>
+              </a></li>
+            <li class="animated slow8" data-animation="fadeInDown"><a href="javascript:void(0)"><span class="span8"></span>
+              <label>业务合作</label>
+              </a></li>
+          </ul>
+              <div class="clear"></div>
+            </div>
+      </div>
+        </div>
+  </div>
+    </div>
+<!-------------------------------------- 内容结束 --------------------------------------> 
+<!-------------------------------------- 尾部开始 --------------------------------------> 
+<div class="footer">
+  <div class="foot">
+    <div class="wrap">
+      <div class="f_nav">
+        <ul>
+          <li><a href="/">网站首页
+            <label></label>
+            </a></li>
+          
+          <li><a href="/a/peixunkecheng/">热门课程
+            <label></label>
+            </a></li>
+          
+          <li><a href="/a/shizituandui/">师资团队
+            <label></label>
+            </a></li>
+          
+          <li><a href="/a/chenggonganli/">优秀学员
+            <label></label>
+            </a></li>
+          
+          <li><a href="/a/xiangguanfuwu/">课程服务
+            <label></label>
+            </a></li>
+          
+          <li><a href="/a/tongzhizixun/">最新通知
+            <label></label>
+            </a></li>
+          
+        </ul>
+      </div>
+      <div class="f_tel"> <span class="span1">客服电话：15510464942</span> <span class="span2">邮箱： hshunping@163.com</span> </div>
+      <div class="link"> <span>友情链接:</span>   <a href='http://www.baidu.com/' target='_blank'>百度一下</a>     <a href='http://www.dede58.com/' target='_blank'>织梦模板</a>     <a href='https://www.eyoucms.com/' target='_blank'>易优CMS</a>     <a href='http://www.yiyongtong.com/' target='_blank'>小程序</a>     <a href='http://www.sucai58.com/' target='_blank'>素材58</a>     <a href='https://www.eyoucms.com/' target='_blank'>企业建站系统</a>     <a href='https://www.ejucms.com/' target='_blank'>易居CMS</a>     <a href='https://www.taobao.com/' target='_blank'>淘宝</a>    </div>
+    </div>
+  </div>
+  <div class="foot2">
+    <p>Copyright &copy; 2021 韩顺平教育公司 地址：海淀区西三环北路89号4层 网站备案号：<a href="http://www.beian.miit.gov.cn/">粤ICP备xxxxxxxx号【待定】</a></p>
+  </div>
+</div>
+<!-------------------------------------- 尾部结束 -------------------------------------->
+<div class="form_right">
+  <div class="zxkf"> <a href="http://wpa.qq.com/msgrd?v=3&uin=123456789&site=qq&menu=yes">
+    <h4>在线客服</h4>
+    <p>ONLINE SERVICE</p>
+    </a> </div>
+  <div class="lxdh">
+    <h4>联系电话</h4>
+    <p>15510464942</p>
+  </div>
+  <div class="go_top"> <span>返回顶部</span> </div>
+</div>
 
 </body>
-
 </html>

@@ -1,0 +1,1 @@
+<a href="[field:arcurl/]" target="_blank">我要报名~</a>

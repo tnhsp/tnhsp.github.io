@@ -1,0 +1,8 @@
+INSERT INTO `dede_addonarticle18` VALUES('46','7','对教师招聘考试和资格证考试均有深入研究，理论功底扎实，授课思路清晰，深受学生欢迎。','','','127.0.0.1','高级讲师','北京理工大学会计学本科','Famous teacher');
+INSERT INTO `dede_addonarticle18` VALUES('47','7','对教师招聘考试和资格证考试均有深入研究，理论功底扎实，授课思路清晰，深受学生欢迎。','','','127.0.0.1','高级讲师','北京理工大学会计学本科','Famous teacher');
+INSERT INTO `dede_addonarticle18` VALUES('48','7','对教师招聘考试和资格证考试均有深入研究，理论功底扎实，授课思路清晰，深受学生欢迎。','','','127.0.0.1','高级讲师','北京理工大学会计学本科','Famous teacher');
+INSERT INTO `dede_addonarticle18` VALUES('49','7','<span style=\"font-family: Consolas, &quot;Lucida Console&quot;, &quot;Courier New&quot;, monospace; white-space: pre-wrap;\">对教师招聘考试和资格证考试均有深入研究，理论功底扎实，授课思路清晰，深受学生欢迎。</span>','','','127.0.0.1','高级讲师','北京理工大学会计学本科','Famous teacher');
+INSERT INTO `dede_addonarticle18` VALUES('50','7','<span style=\"font-family: Consolas, &quot;Lucida Console&quot;, &quot;Courier New&quot;, monospace; white-space: pre-wrap;\">对教师招聘考试和资格证考试均有深入研究，理论功底扎实，授课思路清晰，深受学生欢迎。</span>','','','127.0.0.1','高级讲师','北京理工大学会计学本科','Famous teacher');
+INSERT INTO `dede_addonarticle18` VALUES('51','7','<span style=\"font-family: Consolas, &quot;Lucida Console&quot;, &quot;Courier New&quot;, monospace; white-space: pre-wrap;\">对教师招聘考试和资格证考试均有深入研究，理论功底扎实，授课思路清晰，深受学生欢迎。</span>','','','127.0.0.1','高级讲师','北京理工大学会计学本科','Famous teacher');
+INSERT INTO `dede_addonarticle18` VALUES('63','7','对教师招聘考试和资格证考试均有深入研究，理论功底扎实，授课思路清晰，深受学生欢迎。','','','127.0.0.1','高级讲师','广州理工大学会计学本科','Famous teacher');
+INSERT INTO `dede_addonarticle18` VALUES('64','7','对教师招聘考试和资格证考试均有深入研究，理论功底扎实，授课思路清晰，深受学生欢迎。','','','127.0.0.1','高级教授','北京大学会计学本科','Famous teacher');

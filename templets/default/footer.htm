@@ -1,0 +1,39 @@
+<div class="footer">
+  <div class="foot">
+    <div class="wrap">
+      <div class="f_nav">
+        <ul>
+          <li><a href="{dede:global.cfg_cmspath/}/">网站首页
+            <label></label>
+            </a></li>
+          {dede:channel type='top' currentstyle="
+          <li><a href='~typelink~' class='thisclass'>~typename~
+            <label></label>
+            </a></li>
+          "}
+          <li><a href="[field:typeurl/]">[field:typename/]
+            <label></label>
+            </a></li>
+          {/dede:channel}
+        </ul>
+      </div>
+      <div class="f_tel"> <span class="span1">客服电话：{dede:global.cfg_tel/}</span> <span class="span2">邮箱： {dede:global.cfg_email/}</span> </div>
+      <div class="link"> <span>友情链接:</span> {dede:flink titlelen='20' row='20' type='text'}  [field:link /]  {/dede:flink} </div>
+    </div>
+  </div>
+  <div class="foot2">
+    <p>{dede:global.cfg_powerby/} 网站备案号：<a href="http://www.beian.miit.gov.cn/">{dede:global.cfg_beian/}</a></p>
+  </div>
+</div>
+<!-------------------------------------- 尾部结束 -------------------------------------->
+<div class="form_right">
+  <div class="zxkf"> <a href="http://wpa.qq.com/msgrd?v=3&uin={dede:global.cfg_qq/}&site=qq&menu=yes">
+    <h4>在线客服</h4>
+    <p>ONLINE SERVICE</p>
+    </a> </div>
+  <div class="lxdh">
+    <h4>联系电话</h4>
+    <p>{dede:global.cfg_tel/}</p>
+  </div>
+  <div class="go_top"> <span>返回顶部</span> </div>
+</div>

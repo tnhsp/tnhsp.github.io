@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="{dede:global.cfg_cmspath/}/skin/js/html5.js"></script>
+        <![endif]-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+    <meta name="keywords" content="{dede:field name='keywords'/}" />
+    <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+    <script type="text/javascript" src="{dede:global.cfg_cmspath/}/skin/js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{dede:global.cfg_cmspath/}/skin/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="{dede:global.cfg_cmspath/}/skin/css/global.css">
+    <link rel="stylesheet" type="text/css" href="{dede:global.cfg_cmspath/}/skin/css/style.css">
+    <link rel="stylesheet" type="text/css" href="{dede:global.cfg_cmspath/}/skin/css/owl.carousel.min.css">
+    <script type="text/javascript" src="{dede:global.cfg_cmspath/}/skin/js/owl.carousel.js"></script>
+    <script type="text/javascript" src="{dede:global.cfg_cmspath/}/skin/js/main.js"></script>
+    <script>
+        $(function () {
+
+        })
+    </script>
+    </head>
+    <body>
+<!-------------------------------------- 头部开始 --------------------------------------> 
+{dede:include filename="head.htm"/} 
+<!-------------------------------------- 头部结束 --------------------------------------> 
+<!-------------------------------------- 内容开始 --------------------------------------> 
+<!--class="animated fast" data-animation="fadeInDown"-->
+<div class="mainer">
+      <div class="team_banner" style="background:url({dede:global.cfg_cmspath/}/skin/images/banner5.jpg) no-repeat center center; background-size:cover;"></div>
+      <div class="page_list">
+    <div class="page page12">
+          <div class="wrap">
+        <div class="team_list">
+              <ul>
+            {dede:list pagesize='12' addfields='byyx,jibie,mingqi' channelid='18'}
+            <li>
+                  <div class="img"> <img src="[field:litpic/]"/>
+                <div class="text">
+                      <p>[field:mingqi/]</p>
+                    </div>
+              </div>
+                  <div class="web">
+                <h3>[field:title/]</h3>
+                <p>[field:byyx/]</p>
+                <p>[field:jibie/]</p>
+              </div>
+                </li>
+            {/dede:list}
+          </ul>
+              <div class="clear"></div>
+            </div>
+        <div class="pagination-wrapper">
+              <div class="pagination"> {dede:pagelist listitem="index,end,pre,next,pageno" listsize="1"/} </div>
+            </div>
+      </div>
+        </div>
+    <div class="page page8">
+          <div class="wrap">
+        <div class="page8_list">
+              <ul>
+            <li><a href="javascript:void(0)"><span class="span1"></span>
+              <label>考试时间</label>
+              </a></li>
+            <li><a href="javascript:void(0)"><span class="span2"></span>
+              <label>免费学习</label>
+              </a></li>
+            <li><a href="javascript:void(0)"><span class="span3"></span>
+              <label>免费试听</label>
+              </a></li>
+            <li><a href="javascript:void(0)"><span class="span4"></span>
+              <label>免费直播</label>
+              </a></li>
+            <li><a href="javascript:void(0)"><span class="span5"></span>
+              <label>免费资料</label>
+              </a></li>
+            <li><a href="javascript:void(0)"><span class="span6"></span>
+              <label>优惠券</label>
+              </a></li>
+            <li><a href="javascript:void(0)"><span class="span7"></span>
+              <label>推荐工作</label>
+              </a></li>
+            <li><a href="javascript:void(0)"><span class="span8"></span>
+              <label>业务合作</label>
+              </a></li>
+          </ul>
+              <div class="clear"></div>
+            </div>
+      </div>
+        </div>
+  </div>
+    </div>
+<!-------------------------------------- 内容结束 --------------------------------------> 
+<!-------------------------------------- 尾部开始 --------------------------------------> 
+{dede:include filename="footer.htm"/}
+</body>
+</html>

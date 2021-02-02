@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="{dede:global.cfg_cmspath/}/skin/js/html5.js"></script>
+        <![endif]-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <title>{dede:global.cfg_webname/}</title>
+    <meta name="description" content="{dede:global.cfg_description/}" />
+    <meta name="keywords" content="{dede:global.cfg_keywords/}" />
+    <script type="text/javascript" src="{dede:global.cfg_cmspath/}/skin/js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{dede:global.cfg_cmspath/}/skin/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="{dede:global.cfg_cmspath/}/skin/css/global.css">
+    <link rel="stylesheet" type="text/css" href="{dede:global.cfg_cmspath/}/skin/css/style.css">
+    <link rel="stylesheet" type="text/css" href="{dede:global.cfg_cmspath/}/skin/css/owl.carousel.min.css">
+    <script type="text/javascript" src="{dede:global.cfg_cmspath/}/skin/js/owl.carousel.js"></script>
+    <script type="text/javascript" src="{dede:global.cfg_cmspath/}/skin/js/main.js"></script>
+    <script>
+        $(function () {
+            $(".team_owl .owl").owlCarousel({
+                 responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2,center:false
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }, margin: 20, loop: true, center: true, dots: false, nav: true, navText: ["<img src='{dede:global.cfg_cmspath/}/skin/images/cur1.png' />", "<img src='{dede:global.cfg_cmspath/}/skin/images/cur2.png' />"]
+            });
+            $(".news_list .owl").owlCarousel({ 
+                responsive: {
+                    0: {
+                        items: 1,loop:true
+                    },
+                    600: {
+                        items: 2, center: false
+                    },
+                    1000: {
+                        items: 3
+                    }
+                },
+                margin: 20, dots: false, nav: true, navText: ["<img src='{dede:global.cfg_cmspath/}/skin/images/cur3.png' />", "<img src='{dede:global.cfg_cmspath/}/skin/images/cur4.png' />"] });
+
+            $(".list_box .item").hide().eq(0).show();
+            $(".course_tit ul li").click(function () {
+                $(this).addClass("on").siblings().removeClass("on");
+                $(".list_box .item").hide().eq($(this).index()).show();
+            })
+
+        })
+    </script>
+    </head>
+    <body>
+<!-------------------------------------- 头部开始 --------------------------------------> 
+{dede:include filename="head.htm"/} 
+<!-------------------------------------- 头部结束 --------------------------------------> 
+<!-------------------------------------- 内容开始 --------------------------------------> 
+<!--class="animated fast" data-animation="fadeInDown"-->
+<div class="mainer">
+      <div class="banner_owl">
+    <div class="banner">
+        <!--
+        {dede:myppt typeid='1'}
+          <div class="item" style="background:url([field:pic/]) no-repeat center center;background-size:cover;"></div>
+          {/dede:myppt} </div>-->
+        <a target="_blank" href="https://www.sohu.com"><div class="item" style="background:url(/uploads/200210/1-200210121G0B7.jpg) no-repeat center center;background-size:cover;"></div></a><a target="_blank" href="https://www.bilibili.com/video/BV1fh411y7R8?from=search&seid=9241867192734979036"><div class="item" style="background:url(/uploads/210201/1-210201163603253.jpg) no-repeat center center;background-size:cover;"></div></a></div>
+    <div class="cur"><span class="prev flt"><img src="{dede:global.cfg_cmspath/}/skin/images/cur1.png"/></span><span class="next frt"><img src="{dede:global.cfg_cmspath/}/skin/images/cur2.png"/></span></div>
+  </div>
+      <div class="page_list">
+    <div class="wrap">
+          <div class="page_top animated more-fast fadeInUp" data-animation="fadeInUp">
+        <div class="wrap1">
+              <ul>
+            <li>
+                  <h3><span class="timer" data-to="19" data-speed="1500">19</span>年</h3>
+                  <p>程序老司机</p>
+                </li>
+            <li class="li_cur"></li>
+            <li>
+                  <h3><span class="timer" data-to="10000" data-speed="1500">10000</span>+</h3>
+                  <p>韩顺平培训学员</p>
+                </li>
+            <li class="li_cur"></li>
+            <li>
+                  <h3><span class="timer" data-to="3000000" data-speed="1500">3000000</span>+</h3>
+                  <p>韩顺平百度收录</p>
+                </li>
+          </ul>
+              <div class="bg"><img src="{dede:global.cfg_cmspath/}/skin/images/bg.png" /></div>
+            </div>
+      </div>
+          <div class="page1 page">
+        <div class="page_tit animated fast fadeInUp" data-animation="fadeInUp">
+              <h3>腾讯课堂<span>·精品课程</span></h3>
+              <p></p>
+            </div>
+        <div class="course_list  animated slow fadeInUp" data-animation="fadeInUp"> {dede:channelartlist typeid='2,2'}
+              <div class="course_tit"> <span class="flt">课程：</span>
+            <ul>
+                  {dede:channel type='son' currentstyle="
+                  <li class='on'><a href='~typelink~'>~typename~</a></li>
+                  "}
+                  <li [field:global name=autoindex runphp="yes"](@me==0)? @me="class='on'":@me="";[/field:global]><a href="javascript:void(0)">[field:typename/]</a></li>
+                  {/dede:channel}
+                </ul>
+            <span class="frt"><a href="{dede:field name='typeurl'/}">更多课程 ></a></span> </div>
+              {/dede:channelartlist}
+              <div class="list_box"> {dede:channelartlist typeid='2'}
+            <div class="item">
+                  <ul>
+                {dede:arclist titlelen='60' row='3' addfields='zjr,kcxx' channelid='17'}
+                <li>
+                      <div class="list">
+                    <div class="img"> <img src="[field:litpic/]" width="434" height="274"/> 
+                          <!--<div class="img_text">
+                        <p>主讲人：[field:zjr/]</p>
+                        <h3>2017年会计培训</h3>
+                        <h3>新手入门</h3>
+                        <h3>基础入门</h3>
+                      </div>--> 
+                        </div>
+                    <div class="text">
+                          <h3><a href="[field:arcurl/]">[field:title/]</a></h3>
+                          <div class="div_tips"> [field:kcxx runphp=yes]
+                        $arr = explode(',',@me);
+                        $result = '';
+                        for($index=0;$index<count($arr);$index++){
+    $result .= "<label>$arr[$index]</label>";
+}
+@me = $result;
+[/field:kcxx] 
+                 </div>
+                          <p>[field:description function='cn_substr(@me,160)'/]...[<a href="[field:arcurl/]" target="_blank" style="color: #0a62bb;">详细</a>]</p>
+                          <!--<div class="btn"><a href="/a/zaixianbaoming">了解详情</a></div>-->
+                        <div class="btn"><a href="[field:arcurl/]" target="_blank">了解更多</a></div>
+                        </div>
+                    <div class="clear"></div>
+                  </div>
+                    </li>
+                {/dede:arclist}
+              </ul>
+                </div>
+            {/dede:channelartlist} </div>
+            </div>
+      </div>
+        </div>
+    {dede:channelartlist typeid='7,7'}
+    <div class="page page2">
+          <div class="wrap">
+        <div class="page_tit  animated more-fast" data-animation="fadeInLeft">
+              <h3>在线教育<span>·{dede:field name='typename'/}</span></h3>
+              <p></p>
+            </div>
+        <div class="team_owl animated fast" data-animation="fadeInUp">
+              <div class="owl"> {dede:arclist titlelen='50' orderby='pubdate' addfields='byyx' channelid='18'}
+            <div class="item"> <a href="[field:arcurl/]">
+              <div class="img"><img src="[field:litpic/]"/>
+                <p>[field:byyx/]</p>
+              </div>
+              <div class="text">
+                <h3>[field:title/]</h3>
+                <p>[field:description function='cn_substr(@me,150)'/]...</p>
+              </div>
+              </a> </div>
+            {/dede:arclist} </div>
+            </div>
+      </div>
+        </div>
+    {/dede:channelartlist} 
+    {dede:channelartlist typeid='8,8'}
+    <div class="page page3">
+          <div class="wrap">
+        <div class="page_tit animated more-fast" data-animation="fadeInRight">
+              <h3>在线教育<span>·{dede:field name='typename'/}</span></h3>
+              <p></p>
+            </div>
+        <div class="case_list animated more-fast" data-animation="fadeInLeft">
+              <ul>
+            {dede:arclist row='6' titlelen='50' orderby='pubdate'}
+            <li> <a href="[field:arcurl/]">
+              <div class="img"><img src="[field:litpic/]"/>
+                <div class="img_text"><span>[field:title/]</span>
+                  <p>工资： ([field:shorttitle/])</p>
+                </div>
+              </div>
+              <div class="text">
+                <p>[field:description function='cn_substr(@me,122)'/]...</p>
+              </div>
+              </a> </li>
+            {/dede:arclist}
+          </ul>
+            </div>
+        <div class="more"><a href="{dede:field name='typeurl'/}">更多案例</a></div>
+      </div>
+        </div>
+    {/dede:channelartlist}
+    <div class="page page4">
+          <div class="page_tit animated more-fast" data-animation="fadeInUp"> {dede:type typeid='13'}
+        <h3>在线教育<span>·[field:typename/]</span></h3>
+        {/dede:type}
+        <p></p>
+      </div>
+          <div class="hj_list">
+        <ul class="animated more-fast" data-animation="fadeInUp">
+              {dede:arclist typeid='13' row='12' titlelen='50' orderby='pubdate'}
+              <li>
+            <div class="img1"><img src="[field:litpic/]" /></div>
+          </li>
+              {/dede:arclist}
+            </ul>
+        <div class="clear"></div>
+      </div>
+        </div>
+    <div class="page page5">
+          <p class="animated more-fast" data-animation="fadeInUp">打造湖南会计实战培训第一品牌。立即申请免费试听课机会！{dede:type typeid='12'} <a href="[field:typelink/]"><span>[field:typename/]</span></a>{/dede:type} </p>
+        </div>
+    {dede:channelartlist typeid='11,11'}
+    <div class="page page6">
+          <div class="wrap">
+        <div class="page_tit animated more-fast" data-animation="fadeInDown">
+              <h3>在线教育<span>·{dede:field name='typename'/}</span></h3>
+              <p></p>
+            </div>
+        <div class="news_list animated fast" data-animation="fadeInUp">
+              <div class="owl"> {dede:arclist titlelen='50' orderby='pubdate'}
+            <div class="item"> <a href="[field:arcurl/]">
+              <div class="img"><img src="[field:litpic/]"/></div>
+              <div class="text">
+                <h3>[field:global name=autoindex runphp="yes"](@me==1)? @me="
+                  <label>最新</label>
+                  ":@me="";[/field:global]<span>[field:title/] </span></h3>
+                <p>[field:description function='cn_substr(@me,80)'/]...</p>
+                <div class="bottom"> <span class="span1">[field:typename/]</span> <span class="span2">[field:pubdate function=MyDate('Y-m-d',@me)/]</span> </div>
+              </div>
+              </a> </div>
+            {/dede:arclist} </div>
+            </div>
+        <div class="more"><a href="{dede:field name='typeurl'/}">更多资讯</a></div>
+      </div>
+        </div>
+    {/dede:channelartlist}
+    <div class="page page7">
+          <div class="wrap">
+        <div class="page_tit animated more-fast" data-animation="fadeInDown"> {dede:type typeid='14'}
+              <h3>在线教育<span>·[field:typename/]</span></h3>
+              {/dede:type}
+              <p></p>
+            </div>
+        <div class="link_list animated fast" data-animation="fadeInDown">
+              <ul>
+            {dede:arclist typeid='14' row='12' titlelen='50' orderby='pubdate'}
+            <li><a href="javascript:void(0)"><img src="[field:litpic/]"/></a></li>
+            {/dede:arclist}
+          </ul>
+              <div class="clear"></div>
+            </div>
+      </div>
+        </div>
+    <div class="page page8">
+          <div class="wrap">
+        <div class="page8_list">
+              <ul>
+            <li class="animated slow1" data-animation="fadeInDown"><a href="javascript:void(0)"><span class="span1"></span>
+              <label>考试时间</label>
+              </a></li>
+            <li class="animated slow2" data-animation="fadeInDown"><a href="javascript:void(0)"><span class="span2"></span>
+              <label>免费学习</label>
+              </a></li>
+            <li class="animated slow3" data-animation="fadeInDown"><a href="javascript:void(0)"><span class="span3"></span>
+              <label>免费试听</label>
+              </a></li>
+            <li class="animated slow4" data-animation="fadeInDown"><a href="javascript:void(0)"><span class="span4"></span>
+              <label>免费直播</label>
+              </a></li>
+            <li class="animated slow5" data-animation="fadeInDown"><a href="javascript:void(0)"><span class="span5"></span>
+              <label>免费资料</label>
+              </a></li>
+            <li class="animated slow6" data-animation="fadeInDown"><a href="javascript:void(0)"><span class="span6"></span>
+              <label>优惠券</label>
+              </a></li>
+            <li class="animated slow7" data-animation="fadeInDown"><a href="javascript:void(0)"><span class="span7"></span>
+              <label>推荐工作</label>
+              </a></li>
+            <li class="animated slow8" data-animation="fadeInDown"><a href="javascript:void(0)"><span class="span8"></span>
+              <label>业务合作</label>
+              </a></li>
+          </ul>
+              <div class="clear"></div>
+            </div>
+      </div>
+        </div>
+  </div>
+    </div>
+<!-------------------------------------- 内容结束 --------------------------------------> 
+<!-------------------------------------- 尾部开始 --------------------------------------> 
+{dede:include filename="footer.htm"/}
+</body>
+</html>

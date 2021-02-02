@@ -1,0 +1,54 @@
+<div class="header">
+  <div class="head">
+    <div class="wrap"> <span>{dede:global.cfg_gg/}</span>
+      <div class="frt">
+        <ul>
+          <li> <span>微信咨询</span>
+            <div class="ewm"><img src="{dede:global.cfg_cmspath/}/skin/images/ewm.png"/></div>
+          </li>
+
+          <li><span>微信公众号</span>
+            <div class="ewm"><img src="{dede:global.cfg_cmspath/}/skin/images/ewm2.png"/></div>
+          </li>
+
+          <!--
+          {dede:type typeid='9'}
+          <li><span><a href="[field:typelink/]">[field:typename/]</a></span></li>
+          {/dede:type}
+          -->
+        </ul>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="head2">
+    <div class="wrap">
+      <div class="logo flt"><a href="{dede:global.cfg_cmspath/}/"><img src="{dede:global.cfg_cmspath/}/skin/images/logo.png"/></a></div>
+      <div class="frt tel">
+        <h3>{dede:global.cfg_tel/}</h3>
+        <p>全国咨询热线</p>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="menu">
+    <div class="wrap">
+      <ul>
+        <li {dede:field name=typeid runphp="yes"}(@me=="")? @me=" class='on'":@me="";{/dede:field}><a href="{dede:global.cfg_cmspath/}/">网站首页
+          <label></label>
+          </a></li>
+        {dede:channel type='top' currentstyle="
+        <li class='on'><a href='~typelink~'>~typename~
+          <label></label>
+          </a></li>
+        "}
+        <li><a href="[field:typeurl/]">[field:typename/]
+          <label></label>
+          </a></li>
+        {/dede:channel}
+      </ul>
+    </div>
+    <div class="menu_wrap"></div>
+    <div class="clear"></div>
+  </div>
+</div>
