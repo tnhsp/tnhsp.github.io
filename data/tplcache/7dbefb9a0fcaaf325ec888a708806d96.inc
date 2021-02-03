@@ -1,0 +1,1 @@
+<a target="_blank" href="{dede:field name='typeurl'/}"><div class="item" style="background:url([field:pic/]) no-repeat center center;background-size:cover;"></div></a>

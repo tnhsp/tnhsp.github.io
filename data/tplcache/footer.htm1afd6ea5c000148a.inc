@@ -23,11 +23,8 @@ $z[5][4]['name']="cfg_powerby";
 $z[6]=Array("global","",1014,1038);
 $z[6][4]=array();
 $z[6][4]['name']="cfg_beian";
-$z[7]=Array("global","",1249,1270);
+$z[7]=Array("global","",1372,1394);
 $z[7][4]=array();
-$z[7][4]['name']="cfg_qq";
-$z[8]=Array("global","",1418,1440);
-$z[8][4]=array();
-$z[8][4]['name']="cfg_tel";
+$z[7][4]['name']="cfg_tel";
 
 ?>

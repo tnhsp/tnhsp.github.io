@@ -155,7 +155,7 @@ $cfg_cross_sectypeid = 'N';
 $cfg_digg_update = 0;
 $cfg_feedback_guest = 'N';
 $cfg_gg = '韩顺平教育，欢迎您';
-$cfg_tel = '15510464942';
+$cfg_tel = '010-12345678';
 $cfg_email = 'hshunping@163.com';
 $cfg_qq = '123456789';
 ?>

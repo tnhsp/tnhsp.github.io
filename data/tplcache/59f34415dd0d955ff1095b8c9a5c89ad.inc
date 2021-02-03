@@ -1,0 +1,1 @@
+<a target="_blank" href="[field:typelink /]"><div class="item" style="background:url([field:pic/]) no-repeat center center;background-size:cover;"></div></a>

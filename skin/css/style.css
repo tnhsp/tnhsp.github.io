@@ -1852,15 +1852,17 @@ img {
 	bottom: 85px;
 	background: #e7e7e7;
 	z-index: 9999;
-	width: 170px;
+	width: 139px;
 }
 .form_right .zxkf {
+	text-align: center;
+	padding: 12px 0 10px;
 	border-bottom: 1px solid #aca6a6;
 }
 .form_right .zxkf a {
 	display: block;
-	padding: 15px 0 15px 62px;
-	background: url(../images/icon30.png) no-repeat 17px center;
+	padding: 120px 0 15px 0px;
+	background: url(../images/icon30.png) no-repeat 7px center;
 }
 .form_right .zxkf h4 {
 	font-size: 16px;
@@ -1920,13 +1922,29 @@ img {
 	left: 25%;
 }
 }
+/*
  @media only screen and (max-width: 1200px) {
 .lxdh, .zxkf {
 	display: none;
-}
+}*/
+@media only screen and (max-width: 1200px) {
+	.lxdh {
+		display: none;
+	}
 .form_right {
-	width: 50px;
+	width: 93px;
 }
+	.form_right .zxkf {
+		text-align: center;
+		padding: 12px 0 2px;
+		border-bottom: 1px solid #aca6a6;
+	}
+	.form_right .zxkf a {
+		display: block;
+		padding: 70px 0 20px 0px;
+		background: url(../images/icon30_2.png) no-repeat 7px center;
+	}
+
 .form_right .go_top {
 	height: 50px;
 }

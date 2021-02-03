@@ -42,14 +42,14 @@ $z[12][4]['filename']="head.htm";
 $z[13]=Array("field","",2085,2114);
 $z[13][4]=array();
 $z[13][4]['name']="position";
-$z[14]=Array("list","\r\n            <li> <a href=\"[field:arcurl/]\">\r\n              <div class=\"img\"><img src=\"[field:litpic/]\"/>\r\n                <div class=\"img_text\"><span>[field:title/]</span>\r\n                  <p>工资： ([field:shorttitle/]元)</p>\r\n                </div>\r\n              </div>\r\n              <div class=\"text\">\r\n                <p>[field:description function='cn_substr(@me,120)'/]...</p>\r\n              </div>\r\n              </a> </li>\r\n            ",2205,2695);
+$z[14]=Array("list","\r\n            <li> <a href=\"[field:arcurl/]\">\r\n              <div class=\"img\"><img src=\"[field:litpic/]\"/>\r\n                <div class=\"img_text\"><!--<span>[field:title/]</span>--><span></span>\r\n                  <!--<p>工资： ([field:shorttitle/]元)</p>--><p></p>\r\n                </div>\r\n              </div>\r\n              <div class=\"text\">\r\n                <p>[field:description function='cn_substr(@me,120)'/]...</p>\r\n              </div>\r\n              </a> </li>\r\n            ",2205,2729);
 $z[14][4]=array();
 $z[14][4]['pagesize']="9";
-$z[15]=Array("pagelist","",2815,2881);
+$z[15]=Array("pagelist","",2849,2915);
 $z[15][4]=array();
 $z[15][4]['listitem']="index,end,pre,next,pageno";
 $z[15][4]['listsize']="1";
-$z[16]=Array("include","",4540,4577);
+$z[16]=Array("include","",4574,4611);
 $z[16][4]=array();
 $z[16][4]['filename']="footer.htm";
 

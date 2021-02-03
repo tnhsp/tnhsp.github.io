@@ -65,11 +65,10 @@
 <div class="mainer">
       <div class="banner_owl">
     <div class="banner">
-        <!--
         {dede:myppt typeid='1'}
-          <div class="item" style="background:url([field:pic/]) no-repeat center center;background-size:cover;"></div>
-          {/dede:myppt} </div>-->
-        <a target="_blank" href="https://www.sohu.com"><div class="item" style="background:url(/uploads/200210/1-200210121G0B7.jpg) no-repeat center center;background-size:cover;"></div></a><a target="_blank" href="https://www.bilibili.com/video/BV1fh411y7R8?from=search&seid=9241867192734979036"><div class="item" style="background:url(/uploads/210201/1-210201163603253.jpg) no-repeat center center;background-size:cover;"></div></a></div>
+          <a target="_blank" href="[field:url/]"><div class="item" style="background:url([field:pic/]) no-repeat center center;background-size:cover;"></div></a>
+          {/dede:myppt} </div>
+        <!--<a target="_blank" href="https://www.sohu.com"><div class="item" style="background:url(/uploads/200210/1-200210121G0B7.jpg) no-repeat center center;background-size:cover;"></div></a><a target="_blank" href="https://www.bilibili.com/video/BV1fh411y7R8?from=search&seid=9241867192734979036"><div class="item" style="background:url(/uploads/210201/1-210201163603253.jpg) no-repeat center center;background-size:cover;"></div></a></div>-->
     <div class="cur"><span class="prev flt"><img src="{dede:global.cfg_cmspath/}/skin/images/cur1.png"/></span><span class="next frt"><img src="{dede:global.cfg_cmspath/}/skin/images/cur2.png"/></span></div>
   </div>
       <div class="page_list">
@@ -154,7 +153,7 @@
     <div class="page page2">
           <div class="wrap">
         <div class="page_tit  animated more-fast" data-animation="fadeInLeft">
-              <h3>在线教育<span>·{dede:field name='typename'/}</span></h3>
+              <!--<h3>在线教育<span>·{dede:field name='typename'/}</span></h3>--><h3><span>{dede:field name='typename'/}</span></h3>
               <p></p>
             </div>
         <div class="team_owl animated fast" data-animation="fadeInUp">
@@ -177,7 +176,7 @@
     <div class="page page3">
           <div class="wrap">
         <div class="page_tit animated more-fast" data-animation="fadeInRight">
-              <h3>在线教育<span>·{dede:field name='typename'/}</span></h3>
+              <!--<h3>韩顺平教育<span>·{dede:field name='typename'/}</span></h3>--><h3><span>{dede:field name='typename'/}</span></h3>
               <p></p>
             </div>
         <div class="case_list animated more-fast" data-animation="fadeInLeft">
@@ -185,8 +184,8 @@
             {dede:arclist row='6' titlelen='50' orderby='pubdate'}
             <li> <a href="[field:arcurl/]">
               <div class="img"><img src="[field:litpic/]"/>
-                <div class="img_text"><span>[field:title/]</span>
-                  <p>工资： ([field:shorttitle/])</p>
+                <div class="img_text"><!--<span>[field:title/]</span>--><span></span>
+                  <!--<p>工资： ([field:shorttitle/])</p>--><p></p>
                 </div>
               </div>
               <div class="text">
@@ -200,7 +199,7 @@
       </div>
         </div>
     {/dede:channelartlist}
-    <div class="page page4">
+    <!--<div class="page page4">
           <div class="page_tit animated more-fast" data-animation="fadeInUp"> {dede:type typeid='13'}
         <h3>在线教育<span>·[field:typename/]</span></h3>
         {/dede:type}
@@ -216,20 +215,20 @@
             </ul>
         <div class="clear"></div>
       </div>
-        </div>
-    <div class="page page5">
-          <p class="animated more-fast" data-animation="fadeInUp">打造湖南会计实战培训第一品牌。立即申请免费试听课机会！{dede:type typeid='12'} <a href="[field:typelink/]"><span>[field:typename/]</span></a>{/dede:type} </p>
-        </div>
+        </div>-->
+    <!--<div class="page page5">
+          <p class="animated more-fast" data-animation="fadeInUp">打造在线教育领先品牌{dede:type typeid='12'} <a href="[field:typelink/]"><span>[field:typename/]</span></a>{/dede:type} </p>
+        </div>-->
     {dede:channelartlist typeid='11,11'}
     <div class="page page6">
           <div class="wrap">
         <div class="page_tit animated more-fast" data-animation="fadeInDown">
-              <h3>在线教育<span>·{dede:field name='typename'/}</span></h3>
+              <!--<h3>韩顺平教育<span>·{dede:field name='typename'/}</span></h3>--><h3><span>{dede:field name='typename'/}</span></h3>
               <p></p>
             </div>
         <div class="news_list animated fast" data-animation="fadeInUp">
               <div class="owl"> {dede:arclist titlelen='50' orderby='pubdate'}
-            <div class="item"> <a href="[field:arcurl/]">
+            <div class="item"> <a target="_blank" href="[field:arcurl/]">
               <div class="img"><img src="[field:litpic/]"/></div>
               <div class="text">
                 <h3>[field:global name=autoindex runphp="yes"](@me==1)? @me="
@@ -248,7 +247,7 @@
     <div class="page page7">
           <div class="wrap">
         <div class="page_tit animated more-fast" data-animation="fadeInDown"> {dede:type typeid='14'}
-              <h3>在线教育<span>·[field:typename/]</span></h3>
+              <h3><span>[field:typename/]</span></h3>
               {/dede:type}
               <p></p>
             </div>
@@ -266,29 +265,29 @@
           <div class="wrap">
         <div class="page8_list">
               <ul>
-            <li class="animated slow1" data-animation="fadeInDown"><a href="javascript:void(0)"><span class="span1"></span>
+            <!--<li class="animated slow1" data-animation="fadeInDown"><a href="javascript:void(0)"><span class="span1"></span>
               <label>考试时间</label>
-              </a></li>
-            <li class="animated slow2" data-animation="fadeInDown"><a href="javascript:void(0)"><span class="span2"></span>
+              </a></li>-->
+            <!--<li class="animated slow2" data-animation="fadeInDown"><a href="javascript:void(0)"><span class="span2"></span>
               <label>免费学习</label>
+              </a></li>-->
+            <li class="animated slow3" data-animation="fadeInDown"><a target="_blank" href="/a/tongzhizixun/69.html"><span class="span3"></span>
+              <label>课程试听</label>
               </a></li>
-            <li class="animated slow3" data-animation="fadeInDown"><a href="javascript:void(0)"><span class="span3"></span>
-              <label>免费试听</label>
-              </a></li>
-            <li class="animated slow4" data-animation="fadeInDown"><a href="javascript:void(0)"><span class="span4"></span>
+            <!--<li class="animated slow4" data-animation="fadeInDown"><a href="javascript:void(0)"><span class="span4"></span>
               <label>免费直播</label>
+              </a></li>-->
+            <li class="animated slow5" data-animation="fadeInDown"><a target="_blank" href="/a/tongzhizixun/70.html"><span class="span5"></span>
+              <label>学习资料</label>
               </a></li>
-            <li class="animated slow5" data-animation="fadeInDown"><a href="javascript:void(0)"><span class="span5"></span>
-              <label>免费资料</label>
-              </a></li>
-            <li class="animated slow6" data-animation="fadeInDown"><a href="javascript:void(0)"><span class="span6"></span>
+            <!--<li class="animated slow6" data-animation="fadeInDown"><a href="javascript:void(0)"><span class="span6"></span>
               <label>优惠券</label>
               </a></li>
             <li class="animated slow7" data-animation="fadeInDown"><a href="javascript:void(0)"><span class="span7"></span>
               <label>推荐工作</label>
-              </a></li>
-            <li class="animated slow8" data-animation="fadeInDown"><a href="javascript:void(0)"><span class="span8"></span>
-              <label>业务合作</label>
+              </a></li>-->
+            <li class="animated slow8" data-animation="fadeInDown"><a target="_blank" href="/a/tongzhizixun/71.html"><span class="span8"></span>
+              <label>加入我们</label>
               </a></li>
           </ul>
               <div class="clear"></div>
