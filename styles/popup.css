@@ -1,5 +1,0 @@
-/*首页弹窗效果1*/
-#index_popup2{width:590px; height:420px; position:fixed;_position:absolute; left:50%; top:40%; margin:-140px 0 0 -250px; z-index:9999;}
-#index_popup2 img{width:590px; height:420px;}
-#close_btn2{display:block;position:absolute; right:0; top:0; width:24px; height:24px; background:url("../images/popup2_close.png") 0 0 no-repeat;}
-pan{float:left; display:inline;width:16px; height:16px;margin: 4px 5px 4px 0;;background:url("../images/qq_popup2.png") 0 0 no-repeat;}

@@ -6,7 +6,7 @@
  * @license        http://help.dedecms.com/usersguide/license.html
  * @link           http://www.dedecms.com
  */
-if(!file_exists(dirname(__FILE__).'/data/common.inc.php'))
+if(!file_exists(dirname(__FILE__).'/HD9EcPvf4XGrFXny/data/common.inc.php'))
 {
     header('Location:install/index.php');
     exit();

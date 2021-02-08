@@ -21,7 +21,7 @@ if ( DEDE_ENVIRONMENT == 'production' )
 }
 define('DEDEINC', str_replace("\\", '/', dirname(__FILE__) ) );
 define('DEDEROOT', str_replace("\\", '/', substr(DEDEINC,0,-8) ) );
-define('DEDEDATA', DEDEROOT.'/data');
+define('DEDEDATA', DEDEROOT.'/HD9EcPvf4XGrFXny/data');
 define('DEDEMEMBER', DEDEROOT.'/member');
 define('DEDETEMPLATE', DEDEROOT.'/templets');
 

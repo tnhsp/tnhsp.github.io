@@ -48,15 +48,26 @@
             </div>
         <div class="course_item">
               <ul>
+                  <!--{dede:arclist row='12' titlelen='50' addfields='bm' channelid='17'}
+                  <li> <a target="_blank" href="[field:arcurl/]">
+                      <div class="img"> <img src="[field:litpic/]"/>
+                      </div>
+                  </a>
+                      <div class="web">
+                          <h4><a target="_blank" href="[field:arcurl/]">[field:title/]</a></h4>
+                          <p>[field:bm/]人 报名<span>[field:writer/]</span></p>
+                      </div>
+                  </li>
+                  {/dede:arclist}-->
             {dede:list pagesize='12' addfields='bm,kcxx' channelid='17'}
-            <li> <a href="[field:arcurl/]">
+            <li> <a target="_blank" href="[field:arcurl/]">
               <div class="img"> <img src="[field:litpic/]"/>
                 <div class="text">
                   <p> [field:kcxx runphp=yes]
                     $arr = explode(',',@me);
                     $result = '';
                     for($index=0;$index<count($arr);$index++){
-    $result .= "$arr[$index] / ";
+    $result .= "$arr[$index]  ";
 }
 @me = $result;
 [/field:kcxx]
@@ -66,8 +77,8 @@
               </div>
               </a>
                   <div class="web">
-                <h4><a href="[field:arcurl/]">[field:title/]</a></h4>
-                <p>[field:bm/]人 报名<span>[field:writer/]</span></p>
+                <h4><a target="_blank" href="[field:arcurl/]">[field:title/]</a></h4>
+                <p><!--[field:bm/]人-->报名<span>[field:writer/]</span></p>
               </div>
                 </li>
             {/dede:list}
@@ -85,12 +96,12 @@
             <div class="course_item">
                   <ul>
                 {dede:arclist row='3' titlelen='50' addfields='bm' channelid='17'}
-                <li> <a href="[field:arcurl/]">
+                <li> <a target="_blank" href="[field:arcurl/]">
                   <div class="img"> <img src="[field:litpic/]"/> </div>
                   </a>
                       <div class="web">
-                    <h4><a href="[field:arcurl/]">[field:title/]</a></h4>
-                    <p>[field:bm/]人 报名<span>[field:writer/]</span></p>
+                    <h4><a target="_blank" href="[field:arcurl/]">[field:title/]</a></h4>
+                    <p>[field:bm/]人 报名<span>[field:writer/]人</span></p>
                   </div>
                     </li>
                 {/dede:arclist}
@@ -105,32 +116,32 @@
     <div class="page page8">
           <div class="wrap">
         <div class="page8_list">
-              <ul>
-            <li><a href="javascript:void(0)"><span class="span1"></span>
-              <label>考试时间</label>
-              </a></li>
-            <li><a href="javascript:void(0)"><span class="span2"></span>
-              <label>免费学习</label>
-              </a></li>
-            <li><a href="javascript:void(0)"><span class="span3"></span>
-              <label>免费试听</label>
-              </a></li>
-            <li><a href="javascript:void(0)"><span class="span4"></span>
-              <label>免费直播</label>
-              </a></li>
-            <li><a href="javascript:void(0)"><span class="span5"></span>
-              <label>免费资料</label>
-              </a></li>
-            <li><a href="javascript:void(0)"><span class="span6"></span>
-              <label>优惠券</label>
-              </a></li>
-            <li><a href="javascript:void(0)"><span class="span7"></span>
-              <label>推荐工作</label>
-              </a></li>
-            <li><a href="javascript:void(0)"><span class="span8"></span>
-              <label>业务合作</label>
-              </a></li>
-          </ul>
+            <ul>
+                <!--<li><a href="javascript:void(0)"><span class="span1"></span>
+                  <label>考试时间</label>
+                  </a></li>
+                <li><a href="javascript:void(0)"><span class="span2"></span>
+                  <label>免费学习</label>
+                  </a></li>-->
+                <li><a target="_blank" href="/a/tongzhizixun/69.html"><span class="span3"></span>
+                    <label>课程试听</label>
+                </a></li>
+                <!--<li><a href="javascript:void(0)"><span class="span4"></span>
+                  <label>免费直播</label>
+                  </a></li>-->
+                <li><a target="_blank" href="/a/tongzhizixun/70.html"><span class="span5"></span>
+                    <label>学习资料</label>
+                </a></li>
+                <!--<li><a href="javascript:void(0)"><span class="span6"></span>
+                  <label>优惠券</label>
+                  </a></li>
+                <li><a href="javascript:void(0)"><span class="span7"></span>
+                  <label>推荐工作</label>-->
+                </a></li>
+                <li><a target="_blank" href="/a/tongzhizixun/71.html"><span class="span8"></span>
+                    <label>加入我们</label>
+                </a></li>
+            </ul>
               <div class="clear"></div>
             </div>
       </div>

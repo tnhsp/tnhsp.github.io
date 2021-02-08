@@ -43,6 +43,7 @@ ul, li {
 	overflow: hidden;
 	position: relative;
 }
+/*
 .img:before {
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
@@ -58,7 +59,8 @@ ul, li {
 	bottom: 0;
 	border: 1px solid rgba(255,255,255,0);
 	z-index: 100;
-}
+}*/
+
 .img:hover:before {
 	top: 10px;
 	left: 10px;
@@ -66,6 +68,7 @@ ul, li {
 	bottom: 10px;
 	border: 1px solid rgba(255,255,255,0.5);
 }
+
 .img:hover img {
 	transform: scale(1.1) rotate(3deg);
 	-o-transform: scale(1.1) rotate(3deg);
@@ -544,6 +547,7 @@ ul, li {
 	color: #fff;
 	padding: 0 45px;
 }
+
 .hj_list ul li {
 	cursor: pointer;
 	width: 16.66667%;
@@ -1874,6 +1878,27 @@ img {
 	color: #000;
 	margin-top: 5px;
 }
+
+.form_right .zxkf2 {
+	text-align: center;
+	padding: 5px 0 5px;/*padding: 12px 0 10px;*/
+	border-bottom: 1px solid #aca6a6;
+}
+.form_right .zxkf2 a {
+	display: block;
+	padding: 5px 0 5px 0px;/*padding: 10px 0 15px 0px;*/
+	/*background: url(../images/qqzx.png) no-repeat 7px center;*/
+}
+.form_right .zxkf2 h4 {
+	font-size: 16px;
+	font-weight: normal;
+	color: #000;
+}
+.form_right .zxkf2 p {
+	font-size: 10px;
+	color: #000;
+	margin-top: 5px;
+}
 .form_right .lxdh {
 	text-align: center;
 	padding: 12px 0 10px;
@@ -1922,17 +1947,14 @@ img {
 	left: 25%;
 }
 }
-/*
- @media only screen and (max-width: 1200px) {
-.lxdh, .zxkf {
-	display: none;
-}*/
+
 @media only screen and (max-width: 1200px) {
-	.lxdh {
+	.lxdh/*, .zxkf*/ {
 		display: none;
 	}
 .form_right {
 	width: 93px;
+
 }
 	.form_right .zxkf {
 		text-align: center;
@@ -1945,14 +1967,25 @@ img {
 		background: url(../images/icon30_2.png) no-repeat 7px center;
 	}
 
+	.form_right .zxkf2 {
+		text-align: center;
+		padding: 1px 0 2px;
+		border-bottom: 1px solid #aca6a6;
+	}
+	.form_right .zxkf2 a {
+		display: block;
+		padding: 10px 0 10px 0px;/*padding: 20px 0 20px 0px;*/
+		/*background: url(../images/qqzx_2.png) no-repeat 7px center;*/
+	}
+
 .form_right .go_top {
-	height: 50px;
+	height: 30px;
 }
 .form_right .go_top span {
-	height: 50px;
+	height: 30px;
 	background-position: center center;
 	width: 0px;
-	padding-left: 50px;
+	padding-left: 30px;
 	overflow: hidden;
 }
 .case_list ul {

@@ -1,0 +1,10 @@
+<li> <a target="_blank" href="[field:arcurl/]">
+              <div class="img"><img src="[field:litpic/]"/>
+                <div class="img_text"><!--<span>[field:title/]</span>--><span></span>
+                  <!--<p>工资： ([field:shorttitle/]元)</p>--><p></p>
+                </div>
+              </div>
+              <div class="text">
+                <p>[field:description function='cn_substr(@me,120)'/]...</p>
+              </div>
+              </a> </li>

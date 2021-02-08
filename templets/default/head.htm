@@ -34,7 +34,7 @@
   <div class="menu">
     <div class="wrap">
       <ul>
-        <li {dede:field name=typeid runphp="yes"}(@me=="")? @me=" class='on'":@me="";{/dede:field}><a href="{dede:global.cfg_cmspath/}/">网站首页
+        <li {dede:field name=typeid runphp="yes"}(@me=="")? @me=" class='on'":@me="";{/dede:field}><a href="{dede:global.cfg_cmspath/}/index.php?upcache=1">网站首页
           <label></label>
           </a></li>
         {dede:channel type='top' currentstyle="
@@ -42,7 +42,7 @@
           <label></label>
           </a></li>
         "}
-        <li><a href="[field:typeurl/]">[field:typename/]
+        <li><a target="_blank" href="[field:typeurl/]">[field:typename/]
           <label></label>
           </a></li>
         {/dede:channel}

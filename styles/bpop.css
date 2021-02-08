@@ -1,7 +1,0 @@
-/*底部弹窗css*/
-#webim{position:fixed; right:0; bottom:0; z-index:999; height:auto; width:280px; _position:absolute; _top: expression(documentElement.scrollTop + documentElement.clientHeight-this.offsetHeight); background:url("../images/bpop_bgTop.gif") 0 0 no-repeat #FFFFFF; overflow:hidden;}
-#webim .dlstyle{width:270px; height:auto; overflow:hidden; border:1px solid #b6cfdf; padding:0 4px; font-size:12px; line-height:24px;}
-#webim .dlstyle .dtstyle{width:270px; height:24px; overflow:hidden; position:relative;}
-#closebtn{width:42px; height:15px; position:absolute; top:0; right:0; overflow:hidden; line-height:999em; background:url("../images/bpop_btn.gif") 0 0  no-repeat; cursor:pointer;}
-
-#webim_title{font-weight:bold;}
